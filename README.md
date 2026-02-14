@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://onechat.tools"><img src="https://img.shields.io/badge/官网-onechat.tools-blue?style=flat-square" alt="Website" /></a>
+  <a href="https://onechat.chat"><img src="https://img.shields.io/badge/官网-onechat.tools-blue?style=flat-square" alt="Website" /></a>
   <img src="https://img.shields.io/badge/版本-1.5.7-green?style=flat-square" alt="Version" />
   <img src="https://img.shields.io/badge/许可证-Apache%202.0-orange?style=flat-square" alt="License" />
   <img src="https://img.shields.io/badge/平台-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=flat-square" alt="Platform" />
@@ -166,7 +166,7 @@
 
 ## 下载
 
-前往 [OneChat 官网](https://onechat.tools) 下载最新版本。
+前往 [OneChat 官网](https://onechat.chat) 下载最新版本。
 
 ---
 
