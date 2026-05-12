@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/images/logo.svg" alt="OneChat Logo" width="80" />
+  <img src="./src/assets/images/1.webp" alt="OneChat Logo" width="80" />
 </p>
 
 <h1 align="center">OneChat · 一聊</h1>
@@ -18,6 +18,10 @@
   <img src="https://img.shields.io/badge/版本-1.5.7-green?style=flat-square" alt="Version" />
   <img src="https://img.shields.io/badge/许可证-Apache%202.0-orange?style=flat-square" alt="License" />
   <img src="https://img.shields.io/badge/平台-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=flat-square" alt="Platform" />
+</p>
+
+<p align="center">
+  <strong>⚠️ 注：此项目在开源项目 <a href="https://github.com/ferdium/ferdium-app">ferdium-app</a> 的基础上进行了全面重构。</strong>
 </p>
 
 <p align="center">
