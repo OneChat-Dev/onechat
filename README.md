@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/images/1.webp" alt="OneChat Logo" width="80" />
+  <img src="./src/assets/images/logo.png" alt="OneChat Logo" width="80" />
 </p>
 
 <h1 align="center">OneChat · 一聊</h1>
@@ -31,7 +31,8 @@
   我们为您重构沟通效率，这不仅是聚合器，更是您私人的全球社交中枢。
 </p>
 <p align="center">
-  <img src="./src/assets/images/3.png" alt="OneChat Logo" width="80" />
+  <img src="./src/assets/images/1.webp" alt="OneChat Screenshot 1" width="800" /><br/><br/>
+  <img src="./src/assets/images/3.png" alt="OneChat App Screenshot" width="800" />
 </p>
 ---
 
