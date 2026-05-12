@@ -3,7 +3,6 @@
 </p>
 
 <p align="center">
-  <h1 align="center">OneChat · 一聊</h1>
   <strong>一站式多平台消息聚合桌面客户端</strong><br/>
   在一个窗口中管理 WhatsApp、Telegram、Slack、Discord 等 360+ 消息服务
 </p>
@@ -22,7 +21,7 @@
 <p align="center">
   <strong>⚠️ 注：此项目在开源项目 <a href="https://github.com/ferdium/ferdium-app">ferdium-app</a> 的基础上进行了全面重构。</strong>
 </p>
-
+  <h1 align="center">OneChat · 一聊</h1>
 <p align="center">
   终结软件间的"左右横跳"。<br/>
   深度聚合全球主流聊天应用，搭载顶尖 AI 智能助手。<br/>
