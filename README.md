@@ -30,7 +30,9 @@
   从多语种翻译到模拟真人回复，从语音克隆到全能工具集成。<br/>
   我们为您重构沟通效率，这不仅是聚合器，更是您私人的全球社交中枢。
 </p>
-
+<p align="center">
+  <img src="./src/assets/images/3.png" alt="OneChat Logo" width="80" />
+</p>
 ---
 
 ## 为什么选择 OneChat？
