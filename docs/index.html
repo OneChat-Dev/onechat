@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneChat · 一聊 — 一站式多平台消息聚合桌面客户端</title>
+  <meta name="description" content="深度聚合 WhatsApp、Telegram、Slack、Discord 等 360+ 服务，搭载 AI 智能助手、多引擎翻译、截图翻译、语音克隆，重构全球沟通效率。" />
+  <meta name="keywords" content="OneChat, 一聊, 聚合聊天, 聊天翻译, AI聊天助手, WhatsApp, Telegram, Slack, Discord, 跨境聊天, 多平台聊天" />
+  <meta property="og:title" content="OneChat · 一聊" />
+  <meta property="og:description" content="碎裂的社交，一个就够。不止是聚合，更是你的社交大脑。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://onechat.chat" />
+  <link rel="icon" type="image/svg+xml" href="../src/assets/images/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #6C5CE7;
+      --primary-light: #A29BFE;
+      --primary-dark: #4834D4;
+      --accent: #00CEFF;
+      --bg-dark: #0B0E17;
+      --bg-card: #131724;
+      --bg-card-hover: #1A1F35;
+      --text-primary: #F0F0F5;
+      --text-secondary: #9BA1B7;
+      --border: rgba(108, 92, 231, 0.15);
+      --glow: rgba(108, 92, 231, 0.4);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ===== Background Effects ===== */
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(108, 92, 231, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(108, 92, 231, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .bg-glow-1, .bg-glow-2 {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .bg-glow-1 {
+      width: 600px; height: 600px;
+      background: rgba(108, 92, 231, 0.12);
+      top: -200px; right: -100px;
+    }
+    .bg-glow-2 {
+      width: 500px; height: 500px;
+      background: rgba(0, 206, 255, 0.08);
+      bottom: -150px; left: -100px;
+    }
+
+    /* ===== Layout ===== */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    section { padding: 100px 0; }
+
+    /* ===== Nav ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(11, 14, 23, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    .nav-brand img { width: 32px; height: 32px; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-cta {
+      background: var(--primary);
+      color: #fff !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .nav-cta:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+    /* ===== Hero ===== */
+    .hero {
+      padding-top: 160px;
+      padding-bottom: 100px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 100px;
+      background: rgba(108, 92, 231, 0.1);
+      border: 1px solid rgba(108, 92, 231, 0.25);
+      color: var(--primary-light);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 68px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .hero h1 .gradient {
+      background: linear-gradient(135deg, var(--primary-light), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .hero-slogan {
+      font-size: 18px;
+      color: var(--primary-light);
+      font-weight: 500;
+      font-style: italic;
+      margin-bottom: 32px;
+    }
+    .hero-desc {
+      max-width: 640px;
+      margin: 0 auto 48px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.9;
+    }
+    .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      box-shadow: 0 4px 24px var(--glow);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px var(--glow);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-outline:hover {
+      border-color: var(--primary-light);
+      background: rgba(108, 92, 231, 0.05);
+    }
+
+    /* ===== Services Ticker ===== */
+    .ticker-section { padding: 40px 0 60px; overflow: hidden; }
+    .ticker-label {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 28px;
+    }
+    .ticker-track {
+      display: flex;
+      gap: 48px;
+      animation: ticker 30s linear infinite;
+      width: max-content;
+    }
+    .ticker-track span {
+      font-size: 15px;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      opacity: 0.6;
+      font-weight: 500;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ===== Section Headers ===== */
+    .section-header { text-align: center; margin-bottom: 64px; }
+    .section-header h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+    .section-header p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ===== Feature Cards ===== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 28px;
+      transition: all 0.3s;
+    }
+    .feature-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(108, 92, 231, 0.3);
+      transform: translateY(-4px);
+    }
+    .feature-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+      background: rgba(108, 92, 231, 0.1);
+    }
+    .feature-card h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* Card color variants */
+    .fc-blue .feature-icon { background: rgba(0, 206, 255, 0.1); }
+    .fc-green .feature-icon { background: rgba(0, 210, 106, 0.1); }
+    .fc-orange .feature-icon { background: rgba(253, 121, 72, 0.1); }
+    .fc-pink .feature-icon { background: rgba(232, 67, 147, 0.1); }
+    .fc-yellow .feature-icon { background: rgba(254, 202, 87, 0.1); }
+
+    /* ===== Translation Engines ===== */
+    .engines-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .engine-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: all 0.2s;
+    }
+    .engine-chip:hover {
+      border-color: var(--primary-light);
+      background: var(--bg-card-hover);
+    }
+    .engine-chip .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .engine-chip .name { font-size: 14px; font-weight: 500; }
+    .engine-chip .desc { font-size: 12px; color: var(--text-secondary); }
+
+    /* ===== Highlights ===== */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px 32px;
+    }
+    .highlight-card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .highlight-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .highlight-card li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      padding-left: 20px;
+      position: relative;
+    }
+    .highlight-card li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--primary-light);
+    }
+
+    /* ===== Platform ===== */
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .platform-card {
+      text-align: center;
+      padding: 36px 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      transition: all 0.3s;
+    }
+    .platform-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(108, 92, 231, 0.3);
+    }
+    .platform-card .icon { font-size: 36px; margin-bottom: 16px; }
+    .platform-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+    .platform-card p { font-size: 13px; color: var(--text-secondary); }
+
+    /* ===== CTA ===== */
+    .cta-section {
+      text-align: center;
+      padding: 100px 0 120px;
+    }
+    .cta-box {
+      background: linear-gradient(135deg, rgba(108, 92, 231, 0.12), rgba(0, 206, 255, 0.06));
+      border: 1px solid rgba(108, 92, 231, 0.2);
+      border-radius: 24px;
+      padding: 64px 40px;
+    }
+    .cta-box h2 {
+      font-size: clamp(26px, 4vw, 36px);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .cta-box p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      margin-bottom: 36px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+      text-align: center;
+    }
+    footer p {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    footer a { color: var(--primary-light); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ===== More Features List ===== */
+    .more-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .more-item {
+      padding: 20px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .more-item:hover { border-color: var(--primary-light); color: var(--text-primary); }
+    .more-item .mi-icon { font-size: 20px; margin-bottom: 8px; }
+    .more-item .mi-label { font-weight: 500; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .features-grid { grid-template-columns: 1fr; }
+      .highlights { grid-template-columns: 1fr; }
+      .engines-grid { grid-template-columns: repeat(2, 1fr); }
+      .platform-grid { grid-template-columns: 1fr; }
+      .more-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; }
+      section { padding: 64px 0; }
+      .hero { padding-top: 120px; padding-bottom: 64px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-glow-1"></div>
+<div class="bg-glow-2"></div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="#">
+      <img src="../src/assets/images/logo.svg" alt="OneChat" />
+      OneChat
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">功能</a></li>
+      <li><a href="#translation">翻译</a></li>
+      <li><a href="#more">更多</a></li>
+      <li><a href="#platform">平台</a></li>
+    </ul>
+    <a class="nav-cta" href="https://onechat.chat">立即下载</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">🚀 v1.5.7 · 支持 360+ 服务</div>
+    <h1><span class="gradient">OneChat</span> · 一聊</h1>
+    <p class="hero-sub">一站式多平台消息聚合桌面客户端</p>
+    <p class="hero-slogan">碎裂的社交，一个就够。不止是聚合，更是你的社交大脑。</p>
+    <p class="hero-desc">
+      终结软件间的"左右横跳"。<br/>
+      深度聚合全球主流聊天应用，搭载顶尖 AI 智能助手。<br/>
+      从多语种翻译到模拟真人回复，从语音克隆到全能工具集成。<br/>
+      我们为您重构沟通效率，这不仅是聚合器，更是您私人的全球社交中枢。
+    </p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="https://onechat.chat">
+        ⬇ 免费下载
+      </a>
+      <a class="btn btn-outline" href="https://github.com/nicefusion/onechat-pro">
+        ⭐ GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Ticker -->
+<div class="ticker-section">
+  <p class="ticker-label">支持全球主流服务</p>
+  <div class="ticker-track">
+    <span>WhatsApp</span><span>Telegram</span><span>微信</span><span>Slack</span>
+    <span>Discord</span><span>Teams</span><span>Skype</span><span>Gmail</span>
+    <span>Outlook</span><span>Messenger</span><span>Instagram</span><span>Twitter/X</span>
+    <span>LinkedIn</span><span>Reddit</span><span>Notion</span><span>Trello</span>
+    <span>GitHub</span><span>YouTube</span><span>TikTok</span><span>Signal</span>
+    <span>Rocket.Chat</span><span>Proton Mail</span><span>Jira</span><span>ClickUp</span>
+    <!-- Duplicate for seamless loop -->
+    <span>WhatsApp</span><span>Telegram</span><span>微信</span><span>Slack</span>
+    <span>Discord</span><span>Teams</span><span>Skype</span><span>Gmail</span>
+    <span>Outlook</span><span>Messenger</span><span>Instagram</span><span>Twitter/X</span>
+    <span>LinkedIn</span><span>Reddit</span><span>Notion</span><span>Trello</span>
+    <span>GitHub</span><span>YouTube</span><span>TikTok</span><span>Signal</span>
+    <span>Rocket.Chat</span><span>Proton Mail</span><span>Jira</span><span>ClickUp</span>
+  </div>
+</div>
+
+<!-- Features -->
+<section id="features">
+  <div class="container">
+    <div class="section-header">
+      <h2>为什么选择 OneChat？</h2>
+      <p>每天在多个应用间来回切换？OneChat 让你一个窗口管理一切。</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">📬</div>
+        <h3>360+ 服务聚合</h3>
+        <p>即时通讯、邮箱、社交媒体、协作工具、开发平台，一个窗口全部搞定。每个服务独立隔离，数据互不干扰。</p>
+      </div>
+
+      <div class="feature-card fc-blue">
+        <div class="feature-icon">🌐</div>
+        <h3>多引擎翻译</h3>
+        <p>集成百度、有道、DeepL、ChatGPT、火山、谷歌 6 大翻译引擎，支持 70+ 种语言互译，消息内联翻译。</p>
+      </div>
+
+      <div class="feature-card fc-green">
+        <div class="feature-icon">📸</div>
+        <h3>截图翻译</h3>
+        <p>Ctrl+Shift+A 一键截屏，自动 OCR 识别并翻译图中文字，跨语言阅读场景特别实用。</p>
+      </div>
+
+      <div class="feature-card fc-orange">
+        <div class="feature-icon">🤖</div>
+        <h3>AI 智能助手</h3>
+        <p>搭载 AI 智能助手，支持模拟真人回复、语音克隆、智能消息辅助，让沟通更自然高效。</p>
+      </div>
+
+      <div class="feature-card fc-pink">
+        <div class="feature-icon">📁</div>
+        <h3>工作区管理</h3>
+        <p>按"工作"、"个人"、"项目"等场景创建工作区，每个工作区只显示相关服务，一键切换上下文。</p>
+      </div>
+
+      <div class="feature-card fc-yellow">
+        <div class="feature-icon">🎨</div>
+        <h3>个性化外观</h3>
+        <p>暗黑模式、自定义主题色、侧边栏定制、灰度模式、自定义 CSS，界面完全由你掌控。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Translation -->
+<section id="translation">
+  <div class="container">
+    <div class="section-header">
+      <h2>6 大翻译引擎，跨语言零障碍</h2>
+      <p>支持 70+ 种语言互译，自动检测源语言</p>
+    </div>
+    <div class="engines-grid">
+      <div class="engine-chip">
+        <div class="dot" style="background:#4285F4"></div>
+        <div><div class="name">百度翻译</div><div class="desc">中文场景优化</div></div>
+      </div>
+      <div class="engine-chip">
+        <div class="dot" style="background:#E74040"></div>
+        <div><div class="name">有道翻译</div><div class="desc">中文场景优化</div></div>
+      </div>
+      <div class="engine-chip">
+        <div class="dot" style="background:#0F2B46"></div>
+        <div><div class="name">DeepL</div><div class="desc">高质量欧洲语言</div></div>
+      </div>
+      <div class="engine-chip">
+        <div class="dot" style="background:#10A37F"></div>
+        <div><div class="name">ChatGPT</div><div class="desc">AI 上下文理解</div></div>
+      </div>
+      <div class="engine-chip">
+        <div class="dot" style="background:#FF6A00"></div>
+        <div><div class="name">火山翻译</div><div class="desc">字节跳动引擎</div></div>
+      </div>
+      <div class="engine-chip">
+        <div class="dot" style="background:#34A853"></div>
+        <div><div class="name">谷歌翻译</div><div class="desc">通用覆盖面广</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Highlights -->
+<section>
+  <div class="container">
+    <div class="highlights">
+      <div class="highlight-card">
+        <h3>🔔 智能通知</h3>
+        <ul>
+          <li>实时未读消息角标，一目了然</li>
+          <li>按服务独立控制通知开关</li>
+          <li>定时免打扰（17:00 ~ 09:00 自动静音）</li>
+          <li>私密通知 — 隐藏消息内容预览</li>
+          <li>任务栏角标（Windows 闪烁 / macOS Dock）</li>
+        </ul>
+      </div>
+      <div class="highlight-card">
+        <h3>🔒 安全与隐私</h3>
+        <ul>
+          <li>每服务独立隔离（Session / Cookie / 缓存）</li>
+          <li>全局 + 每服务独立代理（HTTP/SOCKS）</li>
+          <li>WebRTC IP 保护，4 种策略可选</li>
+          <li>自签名证书支持，企业内网友好</li>
+          <li>服务休眠节省资源（7 档可调）</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- More Features -->
+<section id="more">
+  <div class="container">
+    <div class="section-header">
+      <h2>更多实用功能</h2>
+    </div>
+    <div class="more-grid">
+      <div class="more-item"><div class="mi-icon">🖥️</div><div class="mi-label">系统托盘</div></div>
+      <div class="more-item"><div class="mi-icon">⬇️</div><div class="mi-label">下载管理器</div></div>
+      <div class="more-item"><div class="mi-icon">✅</div><div class="mi-label">待办事项集成</div></div>
+      <div class="more-item"><div class="mi-icon">🔍</div><div class="mi-label">页内查找</div></div>
+      <div class="more-item"><div class="mi-icon">✏️</div><div class="mi-label">拼写检查</div></div>
+      <div class="more-item"><div class="mi-icon">📺</div><div class="mi-label">屏幕共享</div></div>
+      <div class="more-item"><div class="mi-icon">🔄</div><div class="mi-label">自动更新</div></div>
+      <div class="more-item"><div class="mi-icon">🚀</div><div class="mi-label">开机自启</div></div>
+      <div class="more-item"><div class="mi-icon">🌍</div><div class="mi-label">58+ 界面语言</div></div>
+      <div class="more-item"><div class="mi-icon">🔗</div><div class="mi-label">深度链接协议</div></div>
+      <div class="more-item"><div class="mi-icon">🌙</div><div class="mi-label">暗黑模式</div></div>
+      <div class="more-item"><div class="mi-icon">⚡</div><div class="mi-label">GPU 硬件加速</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Platform -->
+<section id="platform">
+  <div class="container">
+    <div class="section-header">
+      <h2>全平台支持</h2>
+      <p>Windows、macOS、Linux，一次开发，处处运行</p>
+    </div>
+    <div class="platform-grid">
+      <div class="platform-card">
+        <div class="icon">🪟</div>
+        <h3>Windows</h3>
+        <p>.exe 安装版 / 便携版</p>
+      </div>
+      <div class="platform-card">
+        <div class="icon">🍎</div>
+        <h3>macOS</h3>
+        <p>.dmg 安装包</p>
+      </div>
+      <div class="platform-card">
+        <div class="icon">🐧</div>
+        <h3>Linux</h3>
+        <p>.AppImage / .deb / .rpm / .snap</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>告别"左右横跳"，从此一聊搞定</h2>
+      <p>免费下载 OneChat，开启你的全球社交中枢之旅。</p>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="https://onechat.chat">⬇ 立即下载</a>
+        <a class="btn btn-outline" href="https://github.com/nicefusion/onechat-pro">⭐ Star on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>© 2024-2026 <a href="https://onechat.chat">OneChat · 一聊</a> — Apache License 2.0</p>
+  </div>
+</footer>
+
+</body>
+</html>
