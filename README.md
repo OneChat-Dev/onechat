@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/images/onechat-logo.png" alt="OneChat Logo" width="800" />
+  <img src="./src/assets/images/onechat-logo.png" alt="OneChat Logo" width="600" />
 </p>
 
 <h1 align="center">OneChat · 一聊</h1>
