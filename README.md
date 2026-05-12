@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>一站式多平台消息聚合桌面客户端</strong><br/>
-  在一个窗口中管理 WhatsApp、Telegram、Slack、Discord 等 360+ 消息服务
+  在一个窗口中管理 WhatsApp、Telegram、Slack、Discord 等 360+ 消息服务,搭载 AI 智能助手、多引擎翻译、截图翻译、语音克隆，重构全球沟通效率。
 </p>
 
 <p align="center">
