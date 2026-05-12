@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ferdium</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./styles/animations.css"
+      media="(prefers-reduced-motion: no-preference)"
+    />
+    <script>
+      require("./app.js")
+    </script>
+
+  </head>
+  <body>
+    <div class="dev-warning">DEV MODE</div>
+    <div id="root"></div>
+    <div id="portalContainer"></div>
+    <script>
+      document
+        .querySelector('body')
+        .classList.add(
+          process.env.OS_PLATFORM ? process.env.OS_PLATFORM : process.platform,
+        );
+      const { isDevMode } = require('./environment-remote');
+      if (isDevMode) {
+        // Here we must access `debug` directly (instead of through `preload-safe-debug`),
+        // because we need to set the log level.
+        // However, this is safe, because we aren't in a preload script.
+        const debugging = require('debug');
+        debugging.enable(process.env.DEBUG);
+
+        const debug = debugging('Index');
+
+        document.querySelector('body').classList.add('isDevMode');
+
+        (function () {
+          const lrHost = 'http://localhost:35729';
+          const s = document.createElement('script');
+          s.async = true;
+          s.setAttribute('src', lrHost + '/livereload.js');
+          document.body.appendChild(s);
+
+          s.onload = () => {
+            debug('livereload loaded');
+            const originalReloadBehaviour = window._onLiveReloadFileChanged;
+
+            window._onLiveReloadFileChanged = file => {
+              const isTodoPreloadPath = file.path.includes(
+                '/build/features/todos/preload.js',
+              );
+              if (
+                !file.path.includes('/build/webview/') &&
+                !file.path.includes('/build/index.js') &&
+                !file.path.includes('/build/electron/') &&
+                !isTodoPreloadPath
+              ) {
+                originalReloadBehaviour(file);
+              } else {
+                if (isTodoPreloadPath) {
+                  debug('Livereload: Reloading all webviews');
+                  const webview = document.querySelector(
+                    'webview[partition="persist:todos"]',
+                  );
+                  if (webview) webview.reload();
+                } else if (file.path.includes('/build/webview/')) {
+                  debug('Livereload: Reloading all webviews');
+                  const webviews = document
+                    .querySelectorAll('webview')
+                    .forEach(webview => webview.reload());
+                } else {
+                  debug(
+                    'Livereload: skip reload as only main process files have changed',
+                  );
+                }
+              }
+            };
+          };
+        })();
+      }
+    </script>
+  </body>
+</html>

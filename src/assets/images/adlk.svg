@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg clip-rule="evenodd" fill-rule="evenodd" version="1.1" viewBox="0 0 120 65" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g clip-rule="evenodd" fill-rule="evenodd" stroke-width=".12275"><circle cx="84.604" cy="32.592" r="30.209" fill="url(#circle1016_00000137847432078275244850000011627749736657852824_)" filter="url(#filter2354)"/><path class="st4" d="m84.654 25.804c-1.7554 0-10.152 6.5427-11.588 6.5427-1.5467 0-11.269-3.7562-12.386-3.0074-0.62602 1.3503 9.5256 11.981 12.287 11.981 2.7128 0 10.753-5.6589 11.686-5.6589 0.9329 0 8.9732 5.6589 11.686 5.6589 2.7619 0 12.914-10.63 12.287-11.981-1.117-0.76106-10.839 3.0074-12.386 3.0074-1.4362 0-9.8324-6.5427-11.588-6.5427z" fill="#fff"/></g>
+    <defs>
+        
+    
+        
+        
+        
+    <linearGradient id="circle1016_00000137847432078275244850000011627749736657852824_" x1="82.176" x2="430.16" y1="429.59" y2="81.61" gradientTransform="matrix(.12275 0 0 .12275 53.155 1.2169)" gradientUnits="userSpaceOnUse"><stop stop-color="#7266F0" offset="0"/><stop stop-color="#734ED3" offset="1"/></linearGradient><filter id="filter2354" x="-.09869" y="-.09869" width="1.1974" height="1.1974" color-interpolation-filters="sRGB"><feFlood flood-color="rgb(0,0,0)" flood-opacity=".49804" result="flood"/><feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/><feGaussianBlur in="composite1" result="blur" stdDeviation="2.48447"/><feOffset dx="2.77556e-17" dy="0" result="offset"/><feComposite in="SourceGraphic" in2="offset" result="composite2"/></filter></defs>
+<g clip-rule="evenodd" fill-rule="evenodd"><g transform="translate(3.9121 3.2238)">
+            <path d="M 29.567,59.968 C 13.238,59.968 0,46.73 0,30.4 0,14.071 13.238,0.833 29.567,0.833 c 16.33,0 29.567,13.238 29.567,29.567 0,16.33 -13.237,29.568 -29.567,29.568 z"/>
+            <path d="M 29.567,59.968 C 13.238,59.968 0,46.73 0,30.4 0,14.071 13.238,0.833 29.567,0.833 c 16.33,0 29.567,13.238 29.567,29.567 0,16.33 -13.237,29.568 -29.567,29.568 z" fill="#e51f5b" stroke="#fff" stroke-width="2.5px" serif:id="path-3"/>
+        </g><g transform="matrix(.57627 0 0 .54746 11.878 16.487)">
+            <path d="M 36.5,21.601 C 42.711,5 55.132,5 61.342,10.9 c 6.211,5.9 6.211,17.7 0,29.5 C 56.995,49.25 45.816,58.1 36.5,64 27.184,58.1 16.005,49.25 11.658,40.4 5.447,28.6 5.447,16.8 11.658,10.9 17.868,5 30.289,5 36.5,21.601 Z" fill="#fff"/>
+        </g></g></svg>

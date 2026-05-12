@@ -1,0 +1,92 @@
+import {
+  action,
+  computed,
+  makeObservable,
+  observable,
+  runInAction,
+} from 'mobx';
+import type { Stores } from '../@types/stores.types';
+import type { Actions } from '../actions/lib/actions';
+import type { ApiInterface } from '../api';
+import appearance from '../features/appearance';
+import basicAuth from '../features/basicAuth';
+import communityRecipes from '../features/communityRecipes';
+import publishDebugInfo from '../features/publishDebugInfo';
+import quickSwitch from '../features/quickSwitch';
+import serviceProxy from '../features/serviceProxy';
+import todos from '../features/todos';
+import workspaces from '../features/workspaces';
+import CachedRequest from './lib/CachedRequest';
+import TypedStore from './lib/TypedStore';
+
+export default class FeaturesStore extends TypedStore {
+  @observable features = {};
+
+  constructor(stores: Stores, api: ApiInterface, actions: Actions) {
+    super(stores, api, actions);
+
+    makeObservable(this);
+  }
+
+  @observable defaultFeaturesRequest = new CachedRequest(
+    this.api.features,
+    'default',
+  );
+
+  @observable featuresRequest = new CachedRequest(
+    this.api.features,
+    'features',
+  );
+
+  async setup(): Promise<void> {
+    this.registerReactions([
+      this._updateFeatures,
+      this._monitorLoginStatus.bind(this),
+    ]);
+
+    await this.featuresRequest.promise;
+    setTimeout(this._setupFeatures.bind(this), 1);
+  }
+
+  @computed get anonymousFeatures(): any {
+    return this.defaultFeaturesRequest.execute().result || {};
+  }
+
+  _updateFeatures = (): void => {
+    const features = {};
+    if (this.stores.user.isLoggedIn) {
+      let requestResult = {};
+      try {
+        requestResult = this.featuresRequest.execute().result;
+      } catch (error) {
+        console.error(error);
+      }
+      Object.assign(features, requestResult);
+    }
+    runInAction(
+      action('FeaturesStore::_updateFeatures', () => {
+        this.features = features;
+      }),
+    );
+  };
+
+  _monitorLoginStatus(): void {
+    if (this.stores.user.isLoggedIn) {
+      this.featuresRequest.invalidate({ immediately: true });
+    } else {
+      this.defaultFeaturesRequest.execute();
+      this.defaultFeaturesRequest.invalidate({ immediately: true });
+    }
+  }
+
+  _setupFeatures(): void {
+    serviceProxy(this.stores);
+    basicAuth();
+    workspaces(this.stores, this.actions);
+    quickSwitch();
+    publishDebugInfo();
+    communityRecipes(this.stores, this.actions);
+    todos(this.stores, this.actions);
+    appearance(this.stores);
+  }
+}

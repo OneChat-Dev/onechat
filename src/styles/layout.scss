@@ -1,0 +1,309 @@
+@import './config.scss';
+
+html {
+  overflow: hidden;
+}
+
+@keyframes pulse-danger {
+  0% {
+    background: darken($theme-brand-danger, 10%);
+  }
+  50% {
+    background: lighten($theme-brand-danger, 10%);
+  }
+  100% {
+    background: darken($theme-brand-danger, 10%);
+  }
+}
+
+.theme__dark .app {
+  background: #272727;
+
+  .sidebar {
+    background: $dark-theme-gray-darker;
+    color: $theme-text-color;
+
+    &::after {
+      box-shadow:
+        inset 0 0 5px 0 $dark-theme-black,
+        inset 0 0 2px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .sidebar__add-service {
+      color: $dark-theme-gray-lighter;
+      background: $dark-theme-gray;
+    }
+
+    .sidebar__button {
+      color: $dark-theme-gray-lighter;
+
+      &:hover,
+      &:active {
+        color: $dark-theme-gray-smoke;
+      }
+
+      &.is-muted,
+      &.is-active {
+        color: $theme-brand-primary;
+      }
+
+      &:disabled {
+        opacity: 0.25;
+        filter: grayscale(1);
+      }
+    }
+  }
+
+  .app-loader .app-loader__title {
+    color: $dark-theme-gray-lightest;
+  }
+}
+
+.update-available {
+  align-items: center;
+  background: $theme-brand-danger;
+  border-radius: 20px;
+  bottom: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 0px 5px;
+  position: absolute;
+  right: 16px;
+  padding-top: 0;
+  font-size: 0px;
+  min-height: 15px;
+  min-width: 15px;
+
+  animation-name: pulse-danger;
+  animation-duration: 0.75s;
+  animation-iteration-count: 6;
+}
+
+.badge .update-available {
+  right: -10px;
+}
+
+.settings-navigation__link .update-available {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+body.win32:not(.isFullScreen) .app .app__content {
+  height: calc(100% - 28px);
+}
+
+.mode__split .app .app__service {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+}
+
+.app {
+  background: #fff;
+  .app__content {
+    display: flex;
+    width: calc(100% + var(--workspace-drawer-width));
+  }
+
+  .app__main-content {
+    display: flex;
+    width: 100%;
+  }
+
+  .app__service {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+}
+
+.workspaces-drawer {
+  position: relative;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: -10px;
+    left: -10px;
+    z-index: 1000;
+    pointer-events: none;
+    clip-path: inset(10px 0 10px 10px);
+    box-shadow:
+      inset 0 0 15px 0 rgba(0, 0, 0, 0.12),
+      inset 0 0 2px 0 rgba(0, 0, 0, 0.36);
+  }
+}
+
+.electron-app-title-bar {
+  z-index: 99999999;
+}
+
+.window-draggable {
+  height: 28px;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  -webkit-app-region: drag;
+}
+
+.darwin .sidebar {
+  padding-top: 29px;
+}
+
+.sidebar {
+  position: relative;
+  align-items: center;
+  background: $theme-gray-lightest;
+  color: $theme-text-color;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  text-align: center;
+  width: $theme-sidebar-width;
+  z-index: 200;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: -10px;
+    left: -10px;
+    z-index: 1000;
+    pointer-events: none;
+    clip-path: inset(10px 0 10px 10px);
+    box-shadow:
+      inset 0 0 10px 0 rgba(0, 0, 0, 0.12),
+      inset 0 0 2px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .sidebar__add-service {
+    color: $theme-gray-light;
+    background: $theme-gray-lighter;
+    border-radius: $theme-border-radius-small;
+    height: 32px;
+    margin: 10px auto;
+    width: 32px;
+  }
+
+  .sidebar__button {
+    color: $theme-gray-light;
+    font-size: 24px;
+    padding: 7px 0;
+    position: relative;
+    width: $theme-sidebar-width;
+
+    &:hover,
+    &:active {
+      color: lighten($theme-gray-light, 10%);
+    }
+    &.is-muted,
+    &.is-active {
+      color: $theme-brand-primary;
+    }
+    &--new-service {
+      padding-bottom: 6px;
+    }
+  }
+
+  & > div {
+    display: flex;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@keyframes isDownloadingFade {
+  50% {
+    color: $theme-brand-primary;
+  }
+}
+
+@keyframes isDownloadingDoneFade {
+  50% {
+    color: green;
+  }
+}
+
+.sidebar__button--downloading {
+  animation: isDownloadingFade 1s cubic-bezier(0.755, 0.05, 0.855, 0.06)
+    infinite;
+}
+
+.sidebar__button--done {
+  animation: isDownloadingDoneFade 0.2s linear infinite;
+}
+
+.grid .grid__row {
+  display: flex;
+  flex-direction: row;
+
+  & > * {
+    margin-right: 20px;
+  }
+  & :last-child {
+    margin-right: 0;
+  }
+}
+
+.app-loader {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .app-loader__title {
+    color: #fff;
+    font-size: 40px;
+  }
+
+  & > span {
+    height: auto;
+  }
+}
+
+.dev-warning {
+  display: none;
+}
+
+.isDevMode .dev-warning {
+  border-radius: 3px;
+  background: $theme-brand-warning;
+  color: #fff;
+  display: block;
+  font-size: 8px;
+  height: auto;
+  padding: 4px;
+  position: fixed;
+  left: 9px;
+  bottom: 0px;
+  @media (prefers-reduced-motion: no-preference) {
+    transition: opacity 0.5s ease;
+  }
+  width: auto;
+  z-index: 999999999;
+  pointer-events: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+:root {
+  --workspace-drawer-width: 300px;
+}
+
+// Add a class for compact mode
+.app--compact-workspace {
+  --workspace-drawer-width: 64px;
+}

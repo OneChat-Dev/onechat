@@ -1,0 +1,73 @@
+@import './config.scss';
+
+.theme__dark {
+  .content-tabs {
+    .content-tabs__content {
+      background: $dark-theme-gray-darker;
+    }
+
+    .content-tabs__tabs {
+      .content-tabs__item {
+        background: $dark-theme-gray;
+        color: #fff;
+        border: 0;
+      }
+    }
+  }
+}
+
+.content-tabs {
+  .content-tabs__tabs {
+    border-top-left-radius: $theme-border-radius-small;
+    border-top-right-radius: $theme-border-radius-small;
+    display: flex;
+    overflow: hidden;
+
+    .content-tabs__item {
+      background: linear-gradient(
+        $theme-gray-lightest 80%,
+        darken($theme-gray-lightest, 3%)
+      );
+      border-right: 1px solid $theme-gray-lighter;
+      color: $theme-gray-dark;
+      flex: 1;
+      padding: 10px;
+      @media (prefers-reduced-motion: no-preference) {
+        transition: background $theme-transition-time;
+      }
+
+      &:last-of-type {
+        border-right: 0;
+      }
+
+      &.is-active {
+        background: $theme-brand-primary;
+        box-shadow: none;
+        color: #fff;
+      }
+    }
+  }
+
+  .content-tabs__content {
+    background: $theme-gray-lightest;
+    border-bottom-left-radius: $theme-border-radius-small;
+    border-bottom-right-radius: $theme-border-radius-small;
+    padding: 20px 20px;
+
+    .content-tabs__item {
+      display: none;
+      top: 0;
+
+      &.is-active {
+        display: block;
+      }
+    }
+
+    .franz-form__input-wrapper {
+      background: #fff;
+    }
+    .franz-form__field:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

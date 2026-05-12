@@ -1,0 +1,20 @@
+.scroll-container {
+  flex: 1;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.loader {
+  display: block;
+  height: 40px;
+  position: relative;
+  width: 100%;
+  z-index: 9999;
+}
+
+.align-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

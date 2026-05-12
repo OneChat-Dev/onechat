@@ -1,0 +1,3086 @@
+{
+  "projectName": "ferdium-app",
+  "projectOwner": "ferdium",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "files": [
+    "README.md"
+  ],
+  "contributorsPerLine": 7,
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "badgeTemplate": "<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-<%= contributors.length %>-default.svg?logo=github&color=6c64e4' alt='Contributors'/></a>",
+  "contributorTemplate": "<a href='<%= contributor.profile %>' title='<%= contributor.name %>: <%= contributor.contributions.join(', ') %>'><img src='<%= contributor.avatar_url %>' alt='<%= contributor.login %>' style='width:<%= options.imageSize %>px;'/></a>",
+  "contributors": [
+    {
+      "login": "vantezzen",
+      "name": "Bennett",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/10333196?v=4",
+      "profile": "https://vantezzen.io",
+      "contributions": [
+        "code",
+        "design",
+        "doc",
+        "ideas",
+        "translation",
+        "example",
+        "bug",
+        "content",
+        "infra",
+        "userTesting",
+        "question",
+        "projectManagement",
+        "review",
+        "translation"
+      ]
+    },
+    {
+      "login": "vraravam",
+      "name": "Vijay Raghavan Aravamudhan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69629?v=4",
+      "profile": "https://github.com/vraravam",
+      "contributions": [
+        "blog",
+        "bug",
+        "code",
+        "content",
+        "design",
+        "doc",
+        "ideas",
+        "infra",
+        "maintenance",
+        "mentoring",
+        "platform",
+        "projectManagement",
+        "question",
+        "review",
+        "translation",
+        "userTesting"
+      ]
+    },
+    {
+      "login": "adlk",
+      "name": "Stefan Malzner",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3265004?v=4",
+      "profile": "http://www.adlk.io",
+      "contributions": [
+        "code",
+        "content",
+        "design",
+        "doc",
+        "ideas",
+        "infra",
+        "projectManagement",
+        "test",
+        "translation"
+      ]
+    },
+    {
+      "login": "Makazzz",
+      "name": "Makazzz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/49844464?v=4",
+      "profile": "https://github.com/Makazzz",
+      "contributions": [
+        "bug",
+        "code",
+        "translation",
+        "content",
+        "doc",
+        "platform",
+        "translation"
+      ]
+    },
+    {
+      "login": "ZeroCool940711",
+      "name": "ZeroCool",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5977640?v=4",
+      "profile": "http://seriesgt.com",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "rseitbekov",
+      "name": "rseitbekov",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/35684439?v=4",
+      "profile": "https://github.com/rseitbekov",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bittner",
+      "name": "Peter Bittner",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/665072?v=4",
+      "profile": "https://djangogigs.com/developers/peter-bittner/",
+      "contributions": [
+        "ideas",
+        "bug"
+      ]
+    },
+    {
+      "login": "justus-saul",
+      "name": "Justus Saul",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5861826?v=4",
+      "profile": "https://github.com/justus-saul",
+      "contributions": [
+        "bug",
+        "ideas"
+      ]
+    },
+    {
+      "login": "igreil",
+      "name": "igreil",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/17239151?v=4",
+      "profile": "https://github.com/igreil",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "marcolopes",
+      "name": "Marco Lopes",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/431889?v=4",
+      "profile": "http://marcolopes.eu",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "dayzlun",
+      "name": "dayzlun",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/17259690?v=4",
+      "profile": "https://github.com/dayzlun",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "tobigue",
+      "name": "Tobias Günther",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1560152?v=4",
+      "profile": "https://twitter.com/tobigue_",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "AGCaesar",
+      "name": "AGCaesar",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7844066?v=4",
+      "profile": "https://github.com/AGCaesar",
+      "contributions": [
+        "platform"
+      ]
+    },
+    {
+      "login": "xthursdayx",
+      "name": "xthursdayx",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/18044308?v=4",
+      "profile": "https://github.com/xthursdayx",
+      "contributions": [
+        "code",
+        "doc",
+        "infra",
+        "platform"
+      ]
+    },
+    {
+      "login": "Gaboris",
+      "name": "Gaboris",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9462372?v=4",
+      "profile": "https://github.com/Gaboris",
+      "contributions": [
+        "question",
+        "bug"
+      ]
+    },
+    {
+      "login": "incace",
+      "name": "Ce",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/61343?v=4",
+      "profile": "http://www.cu3ed.com/",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "pztrn",
+      "name": "Stanislav N.",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/869402?v=4",
+      "profile": "http://pztrn.name/",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "patrickcurl",
+      "name": "Patrick Curl",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1470061?v=4",
+      "profile": "http://www.patrickcurl.com",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "Stanzilla",
+      "name": "Benjamin Staneck",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/75278?v=4",
+      "profile": "https://github.com/Stanzilla",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "ammarmalhas",
+      "name": "ammarmalhas",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/57057209?v=4",
+      "profile": "https://github.com/ammarmalhas",
+      "contributions": [
+        "bug",
+        "security"
+      ]
+    },
+    {
+      "login": "steliyan",
+      "name": "Steliyan Stoyanov",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1850292?v=4",
+      "profile": "https://github.com/steliyan",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "brorbw",
+      "name": "Bror Winther",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5909562?v=4",
+      "profile": "https://github.com/brorbw",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "FWDekker",
+      "name": "Felix W. Dekker",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13442533?v=4",
+      "profile": "https://fwdekker.com/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Sauceee",
+      "name": "Sauceee",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/17987941?v=4",
+      "profile": "https://github.com/Sauceee",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "lhw",
+      "name": "Lennart Weller",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/351875?v=4",
+      "profile": "http://lhw.ring0.de",
+      "contributions": [
+        "platform"
+      ]
+    },
+    {
+      "login": "jereksel",
+      "name": "Andrzej Ressel",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1307829?v=4",
+      "profile": "https://github.com/jereksel",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "dpeukert",
+      "name": "Daniel Peukert",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3451904?v=4",
+      "profile": "https://gitlab.com/dpeukert",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Ali_Shiple",
+      "name": "Ali M. Shiple",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12895436/small/00917d09ca1b4b6d8e0ef36af07ecf6b.jpg",
+      "profile": "https://crowdin.com/profile/Ali_Shiple",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "elviseras",
+      "name": "elviseras",
+      "avatar_url": "https://www.gravatar.com/avatar/25c2cf0d8cb4a4141e71c3b8a2e9324f",
+      "profile": "https://crowdin.com/profile/elviseras",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "J370",
+      "name": "J370",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14141203/small/7b12b5db419d8796450221c2eaaf6003.png",
+      "profile": "https://crowdin.com/profile/J370",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "keunes",
+      "name": "Koen",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13018172/small/829115c606347b10218f34c637a2100c.png",
+      "profile": "https://crowdin.com/profile/keunes",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "leandrogehlen",
+      "name": "Leandro Gehlen",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14099621/small/1d9503523839c310dbce0af3c226e894.jpeg",
+      "profile": "https://crowdin.com/profile/leandrogehlen",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Matthieu42",
+      "name": "Matthieu42",
+      "avatar_url": "https://www.gravatar.com/avatar/735217ccccf11ba97573deee517ddb19",
+      "profile": "https://crowdin.com/profile/Matthieu42",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "nicky18013",
+      "name": "Nikita Bibanaev",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13468928/small/2b31e7ac19645d950a79b33ffd5721b8.png",
+      "profile": "https://crowdin.com/profile/nicky18013",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Tatjana1998",
+      "name": "Tatjana1998",
+      "avatar_url": "https://www.gravatar.com/avatar/ade202a04fcbb2c177e4f1d9936af29e",
+      "profile": "https://crowdin.com/profile/Tatjana1998",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "seayko",
+      "name": "tinect",
+      "avatar_url": "https://www.gravatar.com/avatar/65e2aef738ddf828f822d8463fd04918",
+      "profile": "https://crowdin.com/profile/seayko",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Pusnow",
+      "name": "Wonsup Yoon",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13514833/small/65f0b45587cc7e34f2827830cd324b16.jpeg",
+      "profile": "https://crowdin.com/profile/Pusnow",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "zutt",
+      "name": "zutt",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13320003/small/50fdf9f8c7e54a446925bd79696ea625.JPG",
+      "profile": "https://crowdin.com/profile/zutt",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "n0emis",
+      "name": "n0emis",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22817873?v=4",
+      "profile": "http://twitter.com/noemis_exec",
+      "contributions": [
+        "code",
+        "translation"
+      ]
+    },
+    {
+      "login": "gmarec",
+      "name": "gmarec",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3405028?v=4",
+      "profile": "https://www.monke-agency.com/equipe.html",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "127oo1",
+      "name": "127oo1",
+      "avatar_url": "https://www.gravatar.com/avatar/060c722be11da16ae31902e9c98326b2",
+      "profile": "https://crowdin.com/profile/127oo1",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "ChTBoner",
+      "name": "ChTBoner",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13273153/small/a810886febf5199cfa1c98644444dea7.jpeg",
+      "profile": "https://crowdin.com/profile/ChTBoner",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "johanengstrand",
+      "name": "Johan Engstrand",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14152801/small/fd395f120efca971ca9b34c57fd02cca.png",
+      "profile": "https://crowdin.com/profile/johanengstrand",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mrassili",
+      "name": "Marouane R",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/25288435?v=4",
+      "profile": "https://mrassili.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "yourcontact",
+      "name": "Roman",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/46404814?v=4",
+      "profile": "https://github.com/yourcontact",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "mahadevans87",
+      "name": "Mahadevan Sreenivasan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1255523?v=4",
+      "profile": "https://github.com/mahadevans87",
+      "contributions": [
+        "code",
+        "ideas",
+        "review",
+        "bug",
+        "doc",
+        "userTesting"
+      ]
+    },
+    {
+      "login": "JakeSteam",
+      "name": "Jake Lee",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12380876?v=4",
+      "profile": "https://jakelee.co.uk",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "sampathBlam",
+      "name": "Sampath Kumar Krishnan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/17728976?v=4",
+      "profile": "https://github.com/sampathBlam",
+      "contributions": [
+        "code",
+        "review",
+        "ideas",
+        "bug",
+        "doc",
+        "userTesting"
+      ]
+    },
+    {
+      "login": "saruwman",
+      "name": "saruwman",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/41330038?v=4",
+      "profile": "https://github.com/saruwman",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "dorukkarinca",
+      "name": "dorukkarinca",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9303867?v=4",
+      "profile": "https://github.com/dorukkarinca",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "gautamsi",
+      "name": "Gautam Singh",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5769869?v=4",
+      "profile": "https://www.linkedin.com/in/gautamsi",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "FeikoJoosten",
+      "name": "Feiko Joosten",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/10920052?v=4",
+      "profile": "https://feikojoosten.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "2bdelghafour",
+      "name": "2bdelghafour",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14219410/small/31ff20f60d352fb46e314f3c180a77b0.jpeg",
+      "profile": "https://crowdin.com/profile/2bdelghafour",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "abdoutanta",
+      "name": "Abderrahim Tantaoui",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14213908/small/5b2fc8166f8a0a2b7313fbf49ee5b6b6.jpeg",
+      "profile": "https://crowdin.com/profile/abdoutanta",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "AndiLeni",
+      "name": "AndiLeni",
+      "avatar_url": "https://www.gravatar.com/avatar/4bd0da860de38afa735425ce2d4e10b5",
+      "profile": "https://crowdin.com/profile/AndiLeni",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "brunofalmada",
+      "name": "Bruno Almada",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14200540/small/f6f1addceeeabc02488f9b08520a902f.jpeg",
+      "profile": "https://crowdin.com/profile/brunofalmada",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Catarino",
+      "name": "Catarino Gonçalo",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14208802/small/07287eb2de671257ca3d6bb4ba1cca67.jpeg",
+      "profile": "https://crowdin.com/profile/Catarino",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Alzemand",
+      "name": "Edilson Alzemand Sigmaringa Junior",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14184269/small/f5e68247f01988ae7951a282f0fd4d06.jpeg",
+      "profile": "https://crowdin.com/profile/Alzemand",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "MAT-OUT",
+      "name": "MAT-OUT",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14201550/small/68dd2402bf2879bc3ca312d627710400.png",
+      "profile": "https://crowdin.com/profile/MAT-OUT",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mazzo98",
+      "name": "mazzo98",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12864917/small/69799b5fd7be2f67282715d5cdfd4ae1.png",
+      "profile": "https://crowdin.com/profile/mazzo98",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "paprika-naught-tiffin-flyspeck",
+      "name": "paprika-naught-tiffin-flyspeck",
+      "avatar_url": "https://www.gravatar.com/avatar/8671ebe7a7164dfa7624fbdbff69ed96",
+      "profile": "https://crowdin.com/profile/paprika-naught-tiffin-flyspeck",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "patrickvalle",
+      "name": "Patrick Valle",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14217484/small/8b73f313ee79fe33625e819cdac86551.jpg",
+      "profile": "https://crowdin.com/profile/patrickvalle",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "peq42",
+      "name": "peq42_",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14155811/small/b62a94dde7ec29948ec6a6af9fd24b1d.png",
+      "profile": "https://crowdin.com/profile/peq42",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "karlinhos",
+      "name": "Pumbinha",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14161139/small/96450eb44c22b3141ab4401e547109b8.png",
+      "profile": "https://crowdin.com/profile/karlinhos",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "dies",
+      "name": "Serhiy Dmytryshyn",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/1/small/e84bcdf6c084ffd52527931f988fb410.png",
+      "profile": "https://crowdin.com/profile/dies",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "SMile61",
+      "name": "SMile61",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14177585/small/1bb4f6ba39bff3df8f579e61460ce016.png",
+      "profile": "https://crowdin.com/profile/SMile61",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "tinect",
+      "name": "tinect",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12521988/small/56c2041645746af9e51dd28782b828c3.jpeg",
+      "profile": "https://crowdin.com/profile/tinect",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "gega7",
+      "name": "gega7",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/20799911?v=4",
+      "profile": "https://github.com/gega7",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "tristanplouz",
+      "name": "tristanplouz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6893466?v=4",
+      "profile": "https://github.com/tristanplouz",
+      "contributions": [
+        "code",
+        "ideas",
+        "translation"
+      ]
+    },
+    {
+      "login": "dannyqiu",
+      "name": "Danny Qiu",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1170755?v=4",
+      "profile": "https://github.com/dannyqiu",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "belyazidi56",
+      "name": "Youssef Belyazidi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/35711540?v=4",
+      "profile": "https://github.com/belyazidi56",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "gabspeck",
+      "name": "Gabriel Speckhahn",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/749488?v=4",
+      "profile": "https://github.com/gabspeck",
+      "contributions": [
+        "platform"
+      ]
+    },
+    {
+      "login": "dandelionadia",
+      "name": "Nadiia Ridko",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/33199975?v=4",
+      "profile": "https://github.com/dandelionadia",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "janhohner",
+      "name": "Jan Hohner",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/649895?v=4",
+      "profile": "https://hohner.dev",
+      "contributions": [
+        "userTesting",
+        "translation"
+      ]
+    },
+    {
+      "login": "kris7t",
+      "name": "Kristóf Marussy",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/38888?v=4",
+      "profile": "https://marussy.com",
+      "contributions": [
+        "code",
+        "maintenance",
+        "review"
+      ]
+    },
+    {
+      "login": "raicerk",
+      "name": "Juan Mora",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4575267?v=4",
+      "profile": "https://cl.linkedin.com/in/juanvalentinmoraruiz",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "tofran",
+      "name": "Francisco Marques",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5692603?v=4",
+      "profile": "https://tofran.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "digitalcoyote",
+      "name": "Curtis Carter",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16868093?v=4",
+      "profile": "https://digitalcoyote.github.io/NuGetDefense/",
+      "contributions": [
+        "platform"
+      ]
+    },
+    {
+      "login": "kawarimidoll",
+      "name": "カワリミ人形",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/8146876?v=4",
+      "profile": "https://github.com/kawarimidoll",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "1mm0rt41PC",
+      "name": "1mm0rt41PC",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5358076?v=4",
+      "profile": "https://immortal-pc.info/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "k0staa",
+      "name": "Michał Kostewicz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6313392?v=4",
+      "profile": "http://code-addict.pl",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "arioki1",
+      "name": "Yoga Setiawan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1139881?v=4",
+      "profile": "https://www.linkedin.com/in/yogainformatika/",
+      "contributions": [
+        "code",
+        "platform"
+      ]
+    },
+    {
+      "login": "MosheGross",
+      "name": "Moshe Gross",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77084755?v=4",
+      "profile": "https://github.com/MosheGross",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "stnkl",
+      "name": "Stephan Rumswinkel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17520641?v=4",
+      "profile": "https://github.com/stnkl",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "alopix",
+      "name": "Dustin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124467?v=4",
+      "profile": "https://dustin.meecolabs.eu/",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "jakobsudau",
+      "name": "Jakob Felix Julius Sudau",
+      "avatar_url": "https://avatars.githubusercontent.com/u/721715?v=4",
+      "profile": "https://github.com/jakobsudau",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "prasann",
+      "name": "Prasanna",
+      "avatar_url": "https://avatars.githubusercontent.com/u/380340?v=4",
+      "profile": "https://prasans.info",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "markandan",
+      "name": "Markandan R",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7975763?v=4",
+      "profile": "https://github.com/markandan",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "mhatvan",
+      "name": "Markus Hatvan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16797721?v=4",
+      "profile": "https://markushatvan.com",
+      "contributions": [
+        "code",
+        "ideas",
+        "design",
+        "review",
+        "infra",
+        "translation"
+      ]
+    },
+    {
+      "login": "sergiughf",
+      "name": "Sergiu Ghitea",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28300158?v=4",
+      "profile": "https://sergiu.dev/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ArviTheMan",
+      "name": "ArviTheMan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73516201?v=4",
+      "profile": "https://github.com/ArviTheMan",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "eltociear",
+      "name": "Ikko Ashimine",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22633385?v=4",
+      "profile": "https://bandism.net/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "madsmtm",
+      "name": "Mads Marquart",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10577181?v=4",
+      "profile": "https://github.com/madsmtm",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mloskot",
+      "name": "Mateusz Łoskot",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80741?v=4",
+      "profile": "http://mateusz.loskot.net/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "skoshy",
+      "name": "Stefan K",
+      "avatar_url": "https://avatars.githubusercontent.com/u/369825?v=4",
+      "profile": "https://github.com/skoshy",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "graves501",
+      "name": "graves501",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11211125?v=4",
+      "profile": "https://github.com/graves501",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "sad270",
+      "name": "Sadetdin EYILI",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5607440?v=4",
+      "profile": "https://www.ekino.com",
+      "contributions": [
+        "code",
+        "bug",
+        "userTesting"
+      ]
+    },
+    {
+      "login": "Tsakatac",
+      "name": "Tsakatac",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89021195?v=4",
+      "profile": "https://github.com/Tsakatac",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "niutech",
+      "name": "niu tech",
+      "avatar_url": "https://avatars.githubusercontent.com/u/384997?v=4",
+      "profile": "http://niute.ch",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "Suvarna221B",
+      "name": "Suvarna Sivadas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31803071?v=4",
+      "profile": "https://github.com/Suvarna221B",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "johan-mathew",
+      "name": "Johan Mathew",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31700508?v=4",
+      "profile": "https://github.com/johan-mathew",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "AjeshKumarS",
+      "name": "Ajesh Kumar S",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31558237?v=4",
+      "profile": "https://github.com/AjeshKumarS",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "sreelekhaMarasig",
+      "name": "Ajesh Kumar S",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93112178?v=4",
+      "profile": "https://github.com/sreelekhaMarasig",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "MadhuriBandanadam",
+      "name": "Madhuri",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63137999?v=4",
+      "profile": "https://github.com/MadhuriBandanadam",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "abinmn",
+      "name": "Abin Mn",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29946484?v=4",
+      "profile": "https://github.com/abinmn",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "AnjithPaul",
+      "name": "Anjith Paul",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65152866?v=4",
+      "profile": "https://github.com/AnjithPaul",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Vishnu017",
+      "name": "Vishnu017",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39431453?v=4",
+      "profile": "https://github.com/Vishnu017",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rachelcynthia",
+      "name": "Rachel Cynthia V",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46859572?v=4",
+      "profile": "https://github.com/rachelcynthia",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Chandrika-Priya",
+      "name": "Chandrika Priya Bogadi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46720139?v=4",
+      "profile": "https://github.com/Chandrika-Priya",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Dee-Bajaj",
+      "name": "Deepti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486870?v=4",
+      "profile": "https://github.com/Dee-Bajaj",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "DarsiSreelekha",
+      "name": "DarsiSreelekha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89741061?v=4",
+      "profile": "https://github.com/DarsiSreelekha",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "klaegera",
+      "name": "Adrian Klaeger",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34807567?v=4",
+      "profile": "https://github.com/klaegera",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "martinbernat",
+      "name": "martinbernat",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6809891?v=4",
+      "profile": "https://github.com/martinbernat",
+      "contributions": [
+        "code",
+        "bug",
+        "translation"
+      ]
+    },
+    {
+      "login": "dedotombo",
+      "name": "dedotombo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42537874?v=4",
+      "profile": "https://github.com/dedotombo",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "leofiore",
+      "name": "Leonardo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/655964?v=4",
+      "profile": "https://github.com/leofiore",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "crscaballero",
+      "name": "Cristian Caballero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48134692?v=4",
+      "profile": "https://github.com/crscaballero",
+      "contributions": [
+        "bug",
+        "userTesting"
+      ]
+    },
+    {
+      "login": "klonos",
+      "name": "Greg Netsas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2423362?v=4",
+      "profile": "http://userfriendly.tech",
+      "contributions": [
+        "userTesting"
+      ]
+    },
+    {
+      "login": "rmkanda",
+      "name": "Ramakrishnan Kandasamy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38713281?v=4",
+      "profile": "https://github.com/rmkanda",
+      "contributions": [
+        "review"
+      ]
+    },
+    {
+      "login": "xrup",
+      "name": "xrup",
+      "avatar_url": "https://www.gravatar.com/avatar/9e65aa6d4db623146ec4c571db081a6d",
+      "profile": "https://crowdin.com/profile/xrup",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "daedgoco",
+      "name": "daedgoco",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14233276/small/8823401d22f9ae6865925e4f20eb15e1.png",
+      "profile": "https://crowdin.com/profile/daedgoco",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "adria.soce",
+      "name": "Adrià Solé",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14234338/small/6dc05d89e672bd624e9e37253f852b77.jpeg",
+      "profile": "https://crowdin.com/profile/adria.soce",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "endersonmenezes",
+      "name": "Enderson Menezes",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14234572/small/384477b34fae0a3f98f386cc658b9494.jpeg",
+      "profile": "https://crowdin.com/profile/endersonmenezes",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Ali-Alqazwini",
+      "name": "ali",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14236770/small/328f8ae5f996f60bb2c174a9f8f808ec.jpeg",
+      "profile": "https://crowdin.com/profile/Ali-Alqazwini",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "martonnagy",
+      "name": "Marton Nagy",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14243516/small/54af6111fd1260698f1b6d187245e074.jpeg",
+      "profile": "https://crowdin.com/profile/martonnagy",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "edsonmanuelcarballovera",
+      "name": "Edson Manuel Carballo Vera",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14244460/small/28a9b867da8e2b92904d79348cb39a55.jpeg",
+      "profile": "https://crowdin.com/profile/edsonmanuelcarballovera",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "xelio_91_",
+      "name": "alby.grassi",
+      "avatar_url": "https://www.gravatar.com/avatar/47a0291b35c0031ad0fee6b7cf717728",
+      "profile": "https://crowdin.com/profile/xelio_91_",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mos.vasilis",
+      "name": "Vasilis Moschopoulos",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14266920/small/47c551cf2f468d43a4449a74d8134cc0.jpg",
+      "profile": "https://crowdin.com/profile/mos.vasilis",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "crystyanalencar",
+      "name": "crystyanalencar",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14289028/small/288f15e47856de74b8fdda14ed8d9b69.png",
+      "profile": "https://crowdin.com/profile/crystyanalencar",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "larsmagnusherland",
+      "name": "larsmagnusherland",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13219280/small/424b39a9b0f10a08f63eb1aaea1ba180.png",
+      "profile": "https://crowdin.com/profile/larsmagnusherland",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "GPMartins",
+      "name": "GPMartins",
+      "avatar_url": "https://www.gravatar.com/avatar/b0d3d14cd9dddfbde33ebbb8ec93b997",
+      "profile": "https://crowdin.com/profile/GPMartins",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "MosciolaroMike",
+      "name": "Michelangelo Amoruso Manzari",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14312004/small/06d41030406626131151993d08164756.jpeg",
+      "profile": "https://crowdin.com/profile/MosciolaroMike",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "nicolo.castellini",
+      "name": "Nicoló Castellini",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14315116/small/e28f5f575b7cac2e62ad38dbeefa287d.jpeg",
+      "profile": "https://crowdin.com/profile/nicolo.castellini",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "ValleBL",
+      "name": "Valentin",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14316376/small/10e3598076d2bc111c4377633cf5a77c.jpeg",
+      "profile": "https://crowdin.com/profile/ValleBL",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Jashnok",
+      "name": "Joshua",
+      "avatar_url": "https://www.gravatar.com/avatar/f9d8eedb517530409b8dd9415b29ae74",
+      "profile": "https://crowdin.com/profile/Jashnok",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mulettohonor",
+      "name": "Muletto Honor",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14320218/small/31446d0a50fe681a174dcfce6ccb863b.jpg",
+      "profile": "https://crowdin.com/profile/mulettohonor",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mysticfall",
+      "name": "Xavier Cho",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14325066/small/ea4c81f6e5a2320d077679986808e618.jpeg",
+      "profile": "https://crowdin.com/profile/mysticfall",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "borntzal",
+      "name": "borntzal",
+      "avatar_url": "https://www.gravatar.com/avatar/b9fe7367a9c911e427a22f5214732e4d",
+      "profile": "https://crowdin.com/profile/borntzal",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mahoganypinewood",
+      "name": "Norbert Kőhegyi",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14342206/small/3de2d02f113a1950869a38970ce550db.jpg",
+      "profile": "https://crowdin.com/profile/mahoganypinewood",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "eandersons",
+      "name": "Edgars",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13356613/small/d25f02bc7a75913ce9a11d3c61be6477.png",
+      "profile": "https://crowdin.com/profile/eandersons",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "cnoguerol",
+      "name": "César Noguerol",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14371498/small/77c91c1552d0303285eee49a7233bb2a.jpeg",
+      "profile": "https://crowdin.com/profile/cnoguerol",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "pjs21s",
+      "name": "JinSang Park",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14377502/small/f64299e436a34afa05cab3827a0c8b11.jpeg",
+      "profile": "https://crowdin.com/profile/pjs21s",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "tcarreira",
+      "name": "Tiago Carreira",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14378030/small/e3cf7bb00b6a1711dab58c59ea04cee3.jpeg",
+      "profile": "https://crowdin.com/profile/tcarreira",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "huantrg",
+      "name": "Huan Tran",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14394210/small/ac7208150dfb9196ce6a494390bdfa51.jpeg",
+      "profile": "https://crowdin.com/profile/huantrg",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "maximax",
+      "name": "maximax",
+      "avatar_url": "https://www.gravatar.com/avatar/a537523faffbbf55a0f39471143c3264",
+      "profile": "https://crowdin.com/profile/maximax",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "birobirobiro) (birobirobiro",
+      "name": "João Inácio (birobirobiro)",
+      "avatar_url": "https://www.gravatar.com/avatar/2ea06a80ecd7e4a34acfa43cfa01fa25",
+      "profile": "https://crowdin.com/profile/birobirobiro) (birobirobiro",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "pludi",
+      "name": "Peter L.",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14038315/small/22f4df26f65181a7d3a9de773d11315d.png",
+      "profile": "https://crowdin.com/profile/pludi",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "algonrey",
+      "name": "Alberto González",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14446576/small/e2423064f8b64e4d91eb1d26d1c9e3ed.png",
+      "profile": "https://crowdin.com/profile/algonrey",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mganovelli",
+      "name": "mganovelli",
+      "avatar_url": "https://www.gravatar.com/avatar/73572bf6ada06e0a31902a679231d339",
+      "profile": "https://crowdin.com/profile/mganovelli",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "dvirmalka",
+      "name": "Dvir M",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14451536/small/e724aa43f781c935e408be99e679fe5e.jpg",
+      "profile": "https://crowdin.com/profile/dvirmalka",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Emilio_D",
+      "name": "Daniel Brandobur",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14452294/small/13b5c161612a2f366078b563e9f5e08b.png",
+      "profile": "https://crowdin.com/profile/Emilio_D",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "totoyeah",
+      "name": "totoderek",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14465378/small/234131e24d58cb37ca87aea532d3d347.png",
+      "profile": "https://crowdin.com/profile/totoyeah",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "kev.cabrerar",
+      "name": "Kevin Cabrera",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14471950/small/383c6a879a45001c36228e17e2d81090.png",
+      "profile": "https://crowdin.com/profile/kev.cabrerar",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "hugosantosmobile",
+      "name": "Hugo Santos",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14477058/small/e8a048695e4de818fdf1e3e1326d14c4.png",
+      "profile": "https://crowdin.com/profile/hugosantosmobile",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "sbglasius",
+      "name": "Søren Berg Glasius",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14480260/small/9643f9f295172a5a9959209eee3999bd.png",
+      "profile": "https://crowdin.com/profile/sbglasius",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mustbedreaming",
+      "name": "mustbedreaming",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14482836/small/32bf7ac73042f53cb9b7c82c57023ddb.png",
+      "profile": "https://crowdin.com/profile/mustbedreaming",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Carsso",
+      "name": "Germain Carré",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12353537/small/d9567780a35d1e674cf47a69c301b0c4.png",
+      "profile": "https://crowdin.com/profile/Carsso",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "dominikbullo",
+      "name": "Dominik Bullo",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14494704/small/1debb3d67c6ad7d7f45f0b7a38eb21a7.jpeg",
+      "profile": "https://crowdin.com/profile/dominikbullo",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "gonperezramirez",
+      "name": "Gonzalo Pérez",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14504898/small/4f20dd9bbc823c78568eb6f1cfb2aeb9.jpeg",
+      "profile": "https://crowdin.com/profile/gonperezramirez",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Carlescampins",
+      "name": "Carlescampins",
+      "avatar_url": "https://www.gravatar.com/avatar/b84ccc92d132102110b7aec628f47b6a",
+      "profile": "https://crowdin.com/profile/Carlescampins",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "cverond",
+      "name": "Cristiano Verondini",
+      "avatar_url": "https://www.gravatar.com/avatar/70e4384a871e45743f26bdcc21303c56",
+      "profile": "https://crowdin.com/profile/cverond",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "eliyahillel",
+      "name": "אליה הלל",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14367648/small/834d1cf668a6ca97b2c66093019b5991.jpeg",
+      "profile": "https://crowdin.com/profile/eliyahillel",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "sfkmk",
+      "name": "Samuel Francois Köhler",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14541090/small/f0a810349778c46b7572301340b471e8.jpeg",
+      "profile": "https://crowdin.com/profile/sfkmk",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Letrab",
+      "name": "Bartel",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14544608/small/91c226dbb12aa1067e294cd5c4332ae1.png",
+      "profile": "https://crowdin.com/profile/Letrab",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "alexmartins",
+      "name": "Alexandre Martins",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14544796/small/e3c922101c1ceb7c7a6b7bd165a15d98.jpeg",
+      "profile": "https://crowdin.com/profile/alexmartins",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "jartsa",
+      "name": "Jari Myrskykari",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14080739/small/6dadf0a40522a0e918f746f2b32e6c27.jpg",
+      "profile": "https://crowdin.com/profile/jartsa",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "ugurcansayan",
+      "name": "Uğurcan Sayan",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13023570/small/96cfec0b4d18e4b26b59dfeeaa369cf6.jpg",
+      "profile": "https://crowdin.com/profile/ugurcansayan",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "nasmi3",
+      "name": "Alex",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14563170/small/072d3aadc3866c16ed1a5b5082e81f26.png",
+      "profile": "https://crowdin.com/profile/nasmi3",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "n-mitic",
+      "name": "Nikola Mitić",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14588102/small/5f8b6b73c8d583e6b424607470c09cb7.jpeg",
+      "profile": "https://crowdin.com/profile/n-mitic",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "fawkulce",
+      "name": "fawkulce",
+      "avatar_url": "https://www.gravatar.com/avatar/9004e98cd5e707875b3dd9268214a664",
+      "profile": "https://crowdin.com/profile/fawkulce",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Glenac",
+      "name": "Glenac",
+      "avatar_url": "https://www.gravatar.com/avatar/080652c67697630c9885a1157ad8a360",
+      "profile": "https://crowdin.com/profile/Glenac",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "victoriousnathan55",
+      "name": "Victorious",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14319626/small/120632761f7821f4cbfdac046086b6e7.jpeg",
+      "profile": "https://crowdin.com/profile/victoriousnathan55",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "raoul-m",
+      "name": "Raoul Molai",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13238611/small/2906ff4c9e8704be8cb86d1b1cb124b1.jpg",
+      "profile": "https://crowdin.com/profile/raoul-m",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "nathanaelhoun",
+      "name": "Nathanaël",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14628456/small/7c0f5919fba56edfddf08bf715039f75.jpeg",
+      "profile": "https://crowdin.com/profile/nathanaelhoun",
+      "contributions": [
+        "translation",
+        "infra"
+      ]
+    },
+    {
+      "login": "radulaurentiu",
+      "name": "Laurentiu Radu",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14631958/small/c3a0112e9eb596f0a54cdebf5d99b82a.jpg",
+      "profile": "https://crowdin.com/profile/radulaurentiu",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "GiacomoGuaresi",
+      "name": "GiacomoGuaresi",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14659702/small/12e79e3fc332762058ee525a95b72447.jpeg",
+      "profile": "https://crowdin.com/profile/GiacomoGuaresi",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "cohedz",
+      "name": "Hung Nguyen",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14664150/small/18ae8a7eaa36ba6202fa43eedd84b8d2.jpg",
+      "profile": "https://crowdin.com/profile/cohedz",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "facundo_ingenia",
+      "name": "Facundo Saravia",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14672204/small/eaf2caaff3d2851fabb3d74f76d0542e.png",
+      "profile": "https://crowdin.com/profile/facundo_ingenia",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "llsaboya",
+      "name": "Lefebvre Saboya",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14682462/small/ee313d9b222ea3d1f10bd337d6cb6fce.jpeg",
+      "profile": "https://crowdin.com/profile/llsaboya",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "beez276",
+      "name": "beez276",
+      "avatar_url": "https://www.gravatar.com/avatar/4a5e7e0b13e365d0783e480ddff338fc",
+      "profile": "https://crowdin.com/profile/beez276",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "namu",
+      "name": "namu",
+      "avatar_url": "https://www.gravatar.com/avatar/ddf44bc1e0a05ca46fa9b81f1f916f15",
+      "profile": "https://crowdin.com/profile/namu",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "kauelima",
+      "name": "Kaue Lima",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13054953/small/3319b5f15e0452b664f94e632d51276e.jpeg",
+      "profile": "https://crowdin.com/profile/kauelima",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "AlexDep",
+      "name": "AlexDep",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14705362/small/ba978b0356a94767dc79441c70aee964.png",
+      "profile": "https://crowdin.com/profile/AlexDep",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "tanloibdp",
+      "name": "Nguyễn Tấn Lợi",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14736534/small/42b4da2ca619a6517adbb38bc60c7e5c.jpeg",
+      "profile": "https://crowdin.com/profile/tanloibdp",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "vovven",
+      "name": "Alex Widén",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14748884/small/9829dddc625adca8d20e9687f40f009e.jpeg",
+      "profile": "https://crowdin.com/profile/vovven",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "amin_tado",
+      "name": "amin_tado",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12875002/small/fea4dcbf0c1e15743c467d0e152e43d9.jpg",
+      "profile": "https://crowdin.com/profile/amin_tado",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Rintan",
+      "name": "Rintan",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12710633/small/bd1081c95585021cb9862a5f9d1756ec.png",
+      "profile": "https://crowdin.com/profile/Rintan",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "rishubil",
+      "name": "Nesswit",
+      "avatar_url": "https://www.gravatar.com/avatar/4943e03e0f0cf28d12fbc98064b3f244",
+      "profile": "https://crowdin.com/profile/rishubil",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "AmazingClaymore",
+      "name": "Elia De Togni",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14812758/small/a9f623f45c833c7ba7f04cf2962f3793.png",
+      "profile": "https://crowdin.com/profile/AmazingClaymore",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "zkm3f",
+      "name": "zkm3f",
+      "avatar_url": "https://www.gravatar.com/avatar/2c79623d62d2bb36b31883abd5b08a12",
+      "profile": "https://crowdin.com/profile/zkm3f",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "PrinceNorris",
+      "name": "Sebastian Jasiński",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13962625/small/552e23414407b34f8f67db5ea49a5604.png",
+      "profile": "https://crowdin.com/profile/PrinceNorris",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "MoaufmKlo",
+      "name": "MoaufmKlo",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13720247/small/e01249ad9a091fda233cfaec0774c1fc.png",
+      "profile": "https://crowdin.com/profile/MoaufmKlo",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "marcosorso",
+      "name": "Marcos Orso",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14830692/small/0550fa339b76765dd8b200afabd43b0a.jpeg",
+      "profile": "https://crowdin.com/profile/marcosorso",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "popdisk",
+      "name": "Nice Brown",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14844316/small/5a12669ef15f26b6c53a5d5afe38a6b3.jpeg",
+      "profile": "https://crowdin.com/profile/popdisk",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Loremed",
+      "name": "Loremed",
+      "avatar_url": "https://www.gravatar.com/avatar/76d86c860fa5bdc1694ff9c7dc9778fb",
+      "profile": "https://crowdin.com/profile/Loremed",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "yarinShapira",
+      "name": "yarinShapira",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14845706/small/abf9ec9309f40dfcb01eae2c8fca02fb.png",
+      "profile": "https://crowdin.com/profile/yarinShapira",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Kissadere",
+      "name": "Christopher Coss",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12721969/small/8feaec1d16dd268e5ec29204a6e1d080.jpg",
+      "profile": "https://crowdin.com/profile/Kissadere",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "portakalimsi",
+      "name": "Buğra Çağlar",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13990869/small/a4e0b16904126d8e0d014d952f4bc1b6.jpeg",
+      "profile": "https://crowdin.com/profile/portakalimsi",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "sobeitnow0",
+      "name": "sobeitnow0",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14738292/small/727b33d7bd2ca021cf85b788c6cee9d1.jpeg",
+      "profile": "https://crowdin.com/profile/sobeitnow0",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "dinzahir99",
+      "name": "Muhammad Zahiruddin",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12732934/small/cae45ad9864def2074b1e3c35efce683.png",
+      "profile": "https://crowdin.com/profile/dinzahir99",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "aninuscsalas",
+      "name": "Aninus Partikler",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14358620/small/7f3849dd7ea25ac874fac1986810e329.png",
+      "profile": "https://crowdin.com/profile/aninuscsalas",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "wellingtonsmelo.android",
+      "name": "Wellington Melo",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14888906/small/8d128e54285cac52c0e50e53d4691c82.jpeg",
+      "profile": "https://crowdin.com/profile/wellingtonsmelo.android",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "miangou",
+      "name": "miangou",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14891930/small/78e766643ac488bebc490ecf4677c0c9.jpeg",
+      "profile": "https://crowdin.com/profile/miangou",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "HelaBasa",
+      "name": "Store",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13976107/small/ab4177e8d90665d4603e548488d15c68.jpg",
+      "profile": "https://crowdin.com/profile/HelaBasa",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "technowhizz",
+      "name": "technowhizz",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14897978/small/2d2a416e423758dd52a3dd0f657fdf0c.jpeg",
+      "profile": "https://crowdin.com/profile/technowhizz",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "LucasMasrider",
+      "name": "Trần Lê Quốc Huy",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14613056/small/090933fb64948358fa226ad830de2b21.jpg",
+      "profile": "https://crowdin.com/profile/LucasMasrider",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mble",
+      "name": "Maciej Błędkowski",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14273256/small/7df80579990a9d9e3cf672d04b372297.jpeg",
+      "profile": "https://crowdin.com/profile/mble",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "d3ward",
+      "name": "d3ward",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13781643/small/bf617deeeba0d2efafef223ddb1c3c03.png",
+      "profile": "https://crowdin.com/profile/d3ward",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "amyaan",
+      "name": "amyaan",
+      "avatar_url": "https://www.gravatar.com/avatar/eac6ef8c854035fa9af245f866da0a42",
+      "profile": "https://crowdin.com/profile/amyaan",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "fredwilliamtjr",
+      "name": "Fred William Torno Junior",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14932371/small/e694cada2c8fd7924162e1badcc6af3f.png",
+      "profile": "https://crowdin.com/profile/fredwilliamtjr",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "luis449bp",
+      "name": "José Luis Bandala Pérez",
+      "avatar_url": "https://www.gravatar.com/avatar/e7dbf284ff40c3c32845e1b95d257c61",
+      "profile": "https://crowdin.com/profile/luis449bp",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "gurbii",
+      "name": "gurbii",
+      "avatar_url": "https://www.gravatar.com/avatar/bedbdd12dbf6df0abed084a7f6efe772",
+      "profile": "https://crowdin.com/profile/gurbii",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "13luizhenrique",
+      "name": "Luiz Henrique",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13926183/small/d20b071be813e20efa3a121bc2658989.png",
+      "profile": "https://crowdin.com/profile/13luizhenrique",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "clementbiron",
+      "name": "Clément Biron",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14951127/small/a95b2d3ff6d1b64bf0d75d561e025ec6.png",
+      "profile": "https://crowdin.com/profile/clementbiron",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "ttxsyqz",
+      "name": "ttxsyqz",
+      "avatar_url": "https://www.gravatar.com/avatar/8913ba1176abfc32fa2021a8ec683511",
+      "profile": "https://crowdin.com/profile/ttxsyqz",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "BluePantherFIN",
+      "name": "Janne Salmi",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14958709/small/f32c96756fb16350385ea3dee38626f7.jpeg",
+      "profile": "https://crowdin.com/profile/BluePantherFIN",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "TheRedLadybug62",
+      "name": "TheRedLadybug62",
+      "avatar_url": "https://www.gravatar.com/avatar/4b1fdb0a13f1bdf2bbfda46e9d78f2d0",
+      "profile": "https://crowdin.com/profile/TheRedLadybug62",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "SiderealArt",
+      "name": "曹恩逢",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12960382/small/efd52e2c41be32bfd52569ac15d228b7.jpg",
+      "profile": "https://crowdin.com/profile/SiderealArt",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "jakobsson0",
+      "name": "Martin Jakobsson",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14965633/small/6195809f0df9712fd7d4248d33cc846c.png",
+      "profile": "https://crowdin.com/profile/jakobsson0",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Guus",
+      "name": "Guus",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12495264/small/eb334ff402b0b9bf49493bfce968399d.png",
+      "profile": "https://crowdin.com/profile/Guus",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "peterpacket",
+      "name": "peterpacket",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14970427/small/da8ab2c6b80d2c06a3b9094e53b94db9.jpeg",
+      "profile": "https://crowdin.com/profile/peterpacket",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "ogghi",
+      "name": "ogghi",
+      "avatar_url": "https://www.gravatar.com/avatar/59e381507a01e1c8cf58d2521260c0e1",
+      "profile": "https://crowdin.com/profile/ogghi",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "studinsky",
+      "name": "Vladimir Studinsky",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13280232/small/4dd03819450e266c9b42a7eff880f9dc.jpg",
+      "profile": "https://crowdin.com/profile/studinsky",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "antaljanosbenjamin",
+      "name": "János Benjamin Antal",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14982759/small/174144d1761e4b9f8e50353b4dbca8d1.jpeg",
+      "profile": "https://crowdin.com/profile/antaljanosbenjamin",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "oguzhankara34",
+      "name": "Oğuzhan K",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14989979/small/a404ab91595a7c5cf02854477ac4c559.jpeg",
+      "profile": "https://crowdin.com/profile/oguzhankara34",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "b_n",
+      "name": "Ben Naylor",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14999083/small/00ae25b0d879d7578ca2d3c8c9a0c038.jpeg",
+      "profile": "https://crowdin.com/profile/b_n",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "ignaciocastro",
+      "name": "Ignacio Castro",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14239666/small/ac376ab1a3f35722ab4a153b26ee881a.jpeg",
+      "profile": "https://crowdin.com/profile/ignaciocastro",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "lagstrom",
+      "name": "Niklas Lagström",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15030387/small/329d60a44b8deba42c825e2dc1a9e7a0.jpeg",
+      "profile": "https://crowdin.com/profile/lagstrom",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "jatatox",
+      "name": "Greivin Cordoncillo Romero",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15031761/small/6482c4317b9aa45d3e61ef82eb77b48a.jpeg",
+      "profile": "https://crowdin.com/profile/jatatox",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "gherman.ovidiu.ionut",
+      "name": "Ovidiu Gherman",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15031877/small/2ccf7f461f67f226b58260e459802848.jpeg",
+      "profile": "https://crowdin.com/profile/gherman.ovidiu.ionut",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "erykosky",
+      "name": "Eryk Lewandowski",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15041515/small/43f0bd10f84bf785654f3412f2215df9.png",
+      "profile": "https://crowdin.com/profile/erykosky",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "natas999",
+      "name": "방현수",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14401308/small/e0d6f0cdc5114be795273e5b690f0896.jpeg",
+      "profile": "https://crowdin.com/profile/natas999",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "MyUncleSam",
+      "name": "MyUncleSam",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15046019/small/d48a41a2a7e2d205dbe3316cd834dfb6.jpeg",
+      "profile": "https://crowdin.com/profile/MyUncleSam",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mcwladkoe",
+      "name": "Vladyslav Samotoi",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12996072/small/be802e915089a812d93e676674c9454f.png",
+      "profile": "https://crowdin.com/profile/mcwladkoe",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "vyacheslav_malashin",
+      "name": "Vyacheslav Malashin",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15062315/small/397445945985e829703b1fe3e4f4ccf4.JPG",
+      "profile": "https://crowdin.com/profile/vyacheslav_malashin",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "chatoskuntakinte",
+      "name": "Chatos Kuntakinte",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15062523/small/acb7763df860ca67fe30dbafcf9e31e0.png",
+      "profile": "https://crowdin.com/profile/chatoskuntakinte",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "e0f",
+      "name": "Juha Köpman",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14443460/small/fda983d878c8cd64f9224d2c27a2a56c.jpg",
+      "profile": "https://crowdin.com/profile/e0f",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "AiOO",
+      "name": "AiOO",
+      "avatar_url": "https://www.gravatar.com/avatar/f39fe4e7e61f4aea84e369b5f9d9c2f6",
+      "profile": "https://crowdin.com/profile/AiOO",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "musyawaroh123",
+      "name": "Ibra AF",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13583172/small/f3e47a6f884ad97a5a8d354f0fe5a853.jpg",
+      "profile": "https://crowdin.com/profile/musyawaroh123",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "bekwendhausen",
+      "name": "Rebecca Wendhausen",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15085045/small/3afbce411d873055baca51f69d3bfd8c.png",
+      "profile": "https://crowdin.com/profile/bekwendhausen",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "dastillero",
+      "name": "David Astillero Pérez",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14935695/small/abf96cf0a2ccb90f0ffbd7ffad4bf6f0.jpeg",
+      "profile": "https://crowdin.com/profile/dastillero",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mscythe",
+      "name": "mscythe",
+      "avatar_url": "https://www.gravatar.com/avatar/f5c7d39046e60be1692b03d09624a49e",
+      "profile": "https://crowdin.com/profile/mscythe",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Privatecoder",
+      "name": "Privatecoder",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45964815?v=4",
+      "profile": "https://github.com/Privatecoder",
+      "contributions": [
+        "userTesting"
+      ]
+    },
+    {
+      "login": "lorenzolewis",
+      "name": "Lorenzo Lewis",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15347255?v=4",
+      "profile": "http://lorenzolewis.click",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "niebloomj",
+      "name": "Baruch Jacob Niebloom",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5156403?v=4",
+      "profile": "https://github.com/niebloomj",
+      "contributions": [
+        "review"
+      ]
+    },
+    {
+      "login": "jamesandariese",
+      "name": "James Andariese",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2583421?v=4",
+      "profile": "https://github.com/jamesandariese",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Jipem",
+      "name": "Jean-Pierre MÉRESSE",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15101883/small/56a810446c7f1b7bfd566825bdf38f97.png",
+      "profile": "https://crowdin.com/profile/Jipem",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "XianZongzi",
+      "name": "咸粽子",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/13898579/small/a62e017825193da284eb84b7a318f6b7_default.png",
+      "profile": "https://crowdin.com/profile/XianZongzi",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "barkinarga",
+      "name": "Barkın Arga",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/12813629/small/44d528df52ccd5972d167835ace78078.jpg",
+      "profile": "https://crowdin.com/profile/barkinarga",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Droidnius",
+      "name": "Santiago",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/14790068/small/2d824af4ac6a1f41f82b24020409ae44.jpg",
+      "profile": "https://crowdin.com/profile/Droidnius",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Radiquum",
+      "name": "Kentai Radiquum",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15166222/small/bb762aa8ef3fcac773487ef3ef8708ce.jpeg",
+      "profile": "https://crowdin.com/profile/Radiquum",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "bymcs",
+      "name": "Mehmet Can",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15166456/small/c4d6a35eb95112121b167386c044967d.png",
+      "profile": "https://crowdin.com/profile/bymcs",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "banhetom",
+      "name": "banhetom",
+      "avatar_url": "https://crowdin-static.downloads.crowdin.com/avatar/15203804/small/b8dbe2bfd68c749f7965f39ede727882.png",
+      "profile": "https://crowdin.com/profile/banhetom",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "ElliotThiebaut",
+      "name": "Elliot Thiebaut",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60610988?v=4",
+      "profile": "https://elliotthiebaut.com",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "woropajj",
+      "name": "Jakub",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57800049?v=4",
+      "profile": "https://github.com/woropajj",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "guillermin012",
+      "name": "guillermin012",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76463041?v=4",
+      "profile": "https://github.com/guillermin012",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "SpecialAro",
+      "name": "André Oliveira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37463445?v=4",
+      "profile": "https://github.com/SpecialAro",
+      "contributions": [
+        "code",
+        "infra",
+        "design",
+        "bug",
+        "userTesting",
+        "review",
+        "ideas"
+      ]
+    },
+    {
+      "login": "fernandofig",
+      "name": "Fernando Figueiredo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1110864?v=4",
+      "profile": "https://github.com/fernandofig",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "haraldox",
+      "name": "Harald",
+      "avatar_url": "https://avatars.githubusercontent.com/u/135914?v=4",
+      "profile": "https://meetfranz.com/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "phmigotto",
+      "name": "Peter Migotto",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25492456?v=4",
+      "profile": "http://linkedin.com/in/phmigotto",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "DBozhinovski",
+      "name": "Darko Bozhinovski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/271746?v=4",
+      "profile": "https://github.com/DBozhinovski",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rherwig",
+      "name": "Rico Herwig",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12065150?v=4",
+      "profile": "https://hrwg.de/",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "atakangktepe",
+      "name": "Atakan Goktepe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12830048?v=4",
+      "profile": "https://github.com/atakangktepe",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Jensderond",
+      "name": "Jens de Rond",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6972822?v=4",
+      "profile": "https://github.com/Jensderond",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "michaelhays",
+      "name": "Michael Hays",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6445661?v=4",
+      "profile": "https://github.com/michaelhays",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "haveneersrobin",
+      "name": "Robin Haveneers",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7559898?v=4",
+      "profile": "https://github.com/haveneersrobin",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "closingin",
+      "name": "Rémi Weislinger",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2735603?v=4",
+      "profile": "https://closingin.me/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "dnlup",
+      "name": "dnlup",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15520377?v=4",
+      "profile": "https://github.com/dnlup",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "YWJamesLin",
+      "name": "YWJamesLin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4758887?v=4",
+      "profile": "https://ywjameslin.tw/",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "3b3ziz",
+      "name": "Ahmad M. Abdelaziz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11807541?v=4",
+      "profile": "https://github.com/3b3ziz",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "alecive",
+      "name": "Alessandro Roncone",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4378663?v=4",
+      "profile": "https://hiro-group.ronc.one/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "CSY54",
+      "name": "CSY54",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18496305?v=4",
+      "profile": "https://csy54.github.io/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "mazedlx",
+      "name": "Christian Leo-Pernold",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9453522?v=4",
+      "profile": "https://mazedlx.net/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "vaseker",
+      "name": "Dmitry Vasilyev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1942271?v=4",
+      "profile": "https://vaseker.ru/",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "gkotian",
+      "name": "Gautam Kotian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1580240?v=4",
+      "profile": "https://github.com/gkotian",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Guillerman",
+      "name": "Guillerman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13747538?v=4",
+      "profile": "https://github.com/Guillerman",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "jbellingham",
+      "name": "Jesse Bellingham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5078290?v=4",
+      "profile": "https://github.com/jbellingham",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "kwk",
+      "name": "Konrad Kleine",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193408?v=4",
+      "profile": "https://www.linkedin.com/in/konradkleine/",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "frumania",
+      "name": "Marcel Törpe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12220576?v=4",
+      "profile": "https://frumania.com/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "melodywei861016",
+      "name": "Melody Wei",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21094559?v=4",
+      "profile": "https://github.com/melodywei861016",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "nielsbom",
+      "name": "Niels Bom",
+      "avatar_url": "https://avatars.githubusercontent.com/u/327080?v=4",
+      "profile": "http://www.nielsbom.com/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "dabalroman",
+      "name": "Roman Dąbal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13556759?v=4",
+      "profile": "https://github.com/dabalroman",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "apo-mak",
+      "name": "apo-mak",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25563515?v=4",
+      "profile": "https://github.com/apo-mak",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "cpeetersburg",
+      "name": "Christopher Peeters",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32568187?v=4",
+      "profile": "https://lecroq.be/",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "grzeswol",
+      "name": "Grzegorz Wolsza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2955105?v=4",
+      "profile": "http://www.codewars.com/users/grzeswol",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "imaginarny",
+      "name": "imaginarny",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20380121?v=4",
+      "profile": "https://github.com/imaginarny",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jaebradley",
+      "name": "Jae Bradley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8136030?v=4",
+      "profile": "https://github.com/jaebradley",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "skoruppa",
+      "name": "skoruppa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/899429?v=4",
+      "profile": "https://github.com/skoruppa",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "NathanaelGandhi",
+      "name": "Nathanael",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36506137?v=4",
+      "profile": "https://github.com/NathanaelGandhi",
+      "contributions": [
+        "infra",
+        "code"
+      ]
+    },
+    {
+      "login": "Evan-aja",
+      "name": "Evan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71018479?v=4",
+      "profile": "https://github.com/Evan-aja",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "cedricroijakkers",
+      "name": "Cedric Roijakkers",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15158042?v=4",
+      "profile": "https://github.com/cedricroijakkers",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "kishaningithub",
+      "name": "Kishan B",
+      "avatar_url": "https://avatars.githubusercontent.com/u/763760?v=4",
+      "profile": "https://kishaningithub.github.io/",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "cm-schl",
+      "name": "cm-schl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63400209?v=4",
+      "profile": "https://github.com/cm-schl",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "santhosh-chinnasamy",
+      "name": "Santhosh C",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20743451?v=4",
+      "profile": "https://santhosh.cyou",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Alt37",
+      "name": "Alt37",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44649402?v=4",
+      "profile": "https://github.com/Alt37",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "MagicLegend",
+      "name": "MagicLegend",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3169104?v=4",
+      "profile": "https://github.com/MagicLegend",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "Alphrag",
+      "name": "Alphrag",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34252790?v=4",
+      "profile": "https://github.com/Alphrag",
+      "contributions": [
+        "doc",
+        "infra"
+      ]
+    },
+    {
+      "login": "MaxWipfli",
+      "name": "Max Wipfli",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17591869?v=4",
+      "profile": "http://maxwipfli.ch",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "davidajetter-tw",
+      "name": "davidajetter-tw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105304388?v=4",
+      "profile": "https://github.com/davidajetter-tw",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "stacksjb",
+      "name": "Jesse",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2865491?v=4",
+      "profile": "https://github.com/stacksjb",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "MurzNN",
+      "name": "Alexey Murz Korepov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/336662?v=4",
+      "profile": "http://korepov.pro/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "BrianGilbert",
+      "name": "Brian Gilbert",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114017?v=4",
+      "profile": "http://www.realityloop.com/",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "amangalampalli",
+      "name": "Aditya Mangalampalli",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25261413?v=4",
+      "profile": "https://amangalampalli.github.io/",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "cino",
+      "name": "Ricardo Cino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2735602?v=4",
+      "profile": "http://cino.io",
+      "contributions": [
+        "infra",
+        "code"
+      ]
+    },
+    {
+      "login": "mrksr",
+      "name": "Markus Kaiser",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5184063?v=4",
+      "profile": "https://mrksr.de",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "victorbnl",
+      "name": "Victor B.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39555268?v=4",
+      "profile": "https://github.com/victorbnl",
+      "contributions": [
+        "code",
+        "security"
+      ]
+    },
+    {
+      "login": "Rabattkarte",
+      "name": "Nils Fahldieck",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16440184?v=4",
+      "profile": "https://nils.fahldieck.de",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "neel1996",
+      "name": "Neel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47709856?v=4",
+      "profile": "https://gitconvex.com/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "PritamSangani",
+      "name": "Pritam Sangani",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22857896?v=4",
+      "profile": "https://www.linkedin.com/in/pritamsangani/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "muhamedsalih-tw",
+      "name": "muhamedsalih-tw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104364298?v=4",
+      "profile": "https://github.com/muhamedsalih-tw",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "balajiv113",
+      "name": "Balaji Vijayakumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13016475?v=4",
+      "profile": "https://github.com/balajiv113",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "abacao",
+      "name": "André Bação",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17479246?v=4",
+      "profile": "http://blog.bacao.pt",
+      "contributions": [
+        "security"
+      ]
+    },
+    {
+      "login": "crobinso",
+      "name": "Cole Robinson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1437464?v=4",
+      "profile": "https://blog.wikichoon.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "deadmeu",
+      "name": "deadmeu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12111013?v=4",
+      "profile": "https://github.com/deadmeu",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "MentorPK",
+      "name": "Pawel Kowalski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25907418?v=4",
+      "profile": "https://github.com/MentorPK",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "mcmxcdev",
+      "name": "MCMXC",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16797721?v=4",
+      "profile": "https://github.com/mcmxcdev",
+      "contributions": [
+        "code",
+        "infra"
+      ]
+    },
+    {
+      "login": "xduugu",
+      "name": "xduugu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1039174?v=4",
+      "profile": "https://github.com/xduugu",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "dutscher",
+      "name": "Willy Woitas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14682?v=4",
+      "profile": "http://www.willy-woitas.de",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "danny8376",
+      "name": "Danny Tsai",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3490463?v=4",
+      "profile": "http://saru.moe",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "insidewhy",
+      "name": "insidewhy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97685?v=4",
+      "profile": "https://github.com/insidewhy",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "DenysMb",
+      "name": "Denys Madureira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33737137?v=4",
+      "profile": "https://github.com/DenysMb",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "laur89",
+      "name": "laur89",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4551018?v=4",
+      "profile": "https://github.com/laur89",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "dxrcy",
+      "name": "darcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44690813?v=4",
+      "profile": "http://dxrcy.dev",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "tomaszduda23",
+      "name": "tomaszduda23",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35012788?v=4",
+      "profile": "https://github.com/tomaszduda23",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "x-Ai",
+      "name": "F。",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5061489?v=4",
+      "profile": "https://github.com/x-Ai",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "mbentley",
+      "name": "Matt Bentley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/414445?v=4",
+      "profile": "https://blog.mbentley.net",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jotardo",
+      "name": "jotardo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63938660?v=4",
+      "profile": "https://github.com/jotardo",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "danilofalcao",
+      "name": "Danilo Falcão",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4456855?v=4",
+      "profile": "https://fcon.fedorapeople.org",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "kurobeats",
+      "name": "Anthony Cozamanis",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4091936?v=4",
+      "profile": "https://kurobeats.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "phelix001",
+      "name": "Joshua Freedman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5187100?v=4",
+      "profile": "https://www.linkedin.com/in/joshuafreedman1/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "shuhikari",
+      "name": "Édipo Maciel | 'Shu'",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4049331?v=4",
+      "profile": "http://auditore.com.br",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "commitType": "docs"
+}

@@ -1,0 +1,114 @@
+directories:
+  app: ./build
+  output: ./out
+
+appId: "org.ferdium.ferdium-app"
+
+publish:
+  provider: github
+
+snap:
+  base: core22
+  plugs: ["default", "camera", "audio-record", "removable-media"]
+  allowNativeWayland: true
+  executableArgs: ["$(sh -c '[ \"$(snapctl get wayland-native)\" != \"false\" ] && echo --ozone-platform-hint=auto || true')"]
+  hooks: ./build-helpers/snap-hooks
+  publish:
+    provider: snapStore
+  description: 'Ferdium is your cross-platform messaging app / former heir to the throne of Austria-Hungary which brings your chat & messaging services together into one application. For enabling webcam access you need to connect "camera" plug to snap, and for microphone with PulseAudio the "audio-record" plug. This can be done in Snap GUI or via command: `snap connect ferdium:camera; snap connect ferdium:audio-record`.'
+
+nsis:
+  perMachine: false
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  artifactName: "${productName}-${os}-AutoSetup-${version}-${arch}.${ext}"
+
+portable:
+  artifactName: "${productName}-${os}-Portable-${version}-${arch}.${ext}"
+  unpackDirName: "Ferdium-Unpacked"
+
+dmg:
+  background: ./build-helpers/images/dmgInstaller.tiff
+  icon: ./build-helpers/images/icon.icns
+  iconSize: 128
+  contents:
+    [
+      { x: 380, y: 240, type: link, path: /Applications },
+      { x: 122, y: 240, type: file },
+    ]
+  artifactName: "${productName}-${os}-${version}-${arch}.${ext}"
+
+appImage:
+  artifactName: "${productName}-${os}-Portable-${version}-${arch}.${ext}"
+
+deb:
+  artifactName: "${productName}-${os}-${version}-${arch}.${ext}"
+
+rpm:
+  artifactName: "${productName}-${os}-${version}-${arch}.${ext}"
+  # Prevent creation of symlinks in /usr/lib/.build_id to avoid conflicts with other electron-based app having the symlink to chrome-sandbox
+  fpm: ["--rpm-rpmbuild-define=_build_id_links none"]
+
+# This is the notarization process which allows the app to be opened after download with the minimal warning.
+afterSign: ./build-helpers/notarize.js
+
+protocols:
+  name: Ferdium
+  schemes: [ferdium]
+
+asarUnpack:
+  - ./recipes
+  - ./assets/fonts
+  - ./assets/images/taskbar
+  - ./assets/images/icons
+
+mac:
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  category: public.app-category.productivity
+  icon: ./build-helpers/images/icon.icns
+  darkModeSupport: true
+  entitlements: "./build-helpers/entitlements.mas.plist"
+  entitlementsInherit: "./build-helpers/entitlements.mas.inherit.plist"
+  artifactName: "${productName}-${os}-bundle-${version}-${arch}.${ext}"
+  notarize: false
+  target:
+    - target: dmg
+      arch: [x64, arm64]
+    - target: zip
+      arch: [x64, arm64]
+  extendInfo:
+    NSCameraUsageDescription: "This app requires camera access for video chats"
+    NSMicrophoneUsageDescription: "This app requires microphone access for voice chats"
+    NSFocusStatusUsageDescription: "This app requires focus access for DND functionality"
+
+win:
+  artifactName: "${productName}-${os}-Installer-${version}-${arch}.${ext}"
+  icon: ./build-helpers/images/icon.ico
+  target:
+    - target: nsis
+      arch: [x64, ia32, arm64]
+    - target: portable
+      arch: [x64, ia32, arm64]
+  # The name of the CN appearing in the certificate must be present in the publisherName list below
+  publisherName: ["Ferdium Contributors", "Ambroise Grau"]
+  # Remove the verification for a signature to allow auto-update without signed certificate
+  verifyUpdateCodeSignature: false
+
+linux:
+  icon: ./build-helpers/images/icons
+  category: Network;InstantMessaging;
+  executableName: ferdium
+  synopsis: "Messaging app for WhatsApp, Slack, Telegram, Gmail, Google Chat, and many more."
+  # Note: Please keep the description as a single-line string, as this will become the Comment in the ferdium.desktop Linux launcher file, which requires a single line.
+  description: 'Desktop app bringing all your messaging services into one installable'
+  artifactName: "${productName}-${os}-${version}.${ext}"
+  target:
+    - target: AppImage
+    - target: deb
+      arch: [x64, arm64, armv7l]
+    - target: tar.gz
+    - target: rpm
+      arch: [x64, arm64]
+    - target: freebsd
+    - target: snap

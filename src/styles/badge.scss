@@ -1,0 +1,30 @@
+@import './config.scss';
+
+.theme__dark .badge {
+  background: $dark-theme-gray;
+  color: $dark-theme-gray-lightest;
+
+  &.badge--primary {
+    background: $theme-brand-primary;
+    color: $dark-theme-gray-lightest;
+  }
+}
+
+.badge {
+  background: $theme-gray-lighter;
+  border-radius: $theme-border-radius;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+  letter-spacing: 0;
+
+  &.badge--primary {
+    background: $theme-brand-primary;
+    color: #fff;
+  }
+
+  &.badge--success {
+    background: $theme-brand-success;
+    color: #fff;
+  }
+}

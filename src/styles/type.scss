@@ -1,0 +1,97 @@
+@import './config.scss';
+@import './mixins.scss';
+
+.theme__dark {
+  a {
+    color: $dark-theme-gray-smoke;
+  }
+  .label {
+    color: $dark-theme-gray-lightest;
+  }
+  .footnote {
+    color: $dark-theme-gray-lightest;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.7rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+a,
+button {
+  color: $theme-text-color;
+  text-decoration: none;
+
+  &.button {
+    background: $theme-brand-primary;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    @media (prefers-reduced-motion: no-preference) {
+      transition:
+        background 0.5s,
+        color 0.5s;
+    }
+    cursor: pointer;
+
+    &:hover {
+      background: darken($theme-brand-primary, 10%);
+      color: #fff;
+    }
+  }
+
+  &.link {
+    color: $theme-brand-primary;
+    cursor: pointer;
+  }
+}
+
+.error-message,
+.error-message:last-of-type {
+  color: $theme-brand-danger;
+  margin: 10px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.label {
+  @include formLabel();
+}
+
+.footnote {
+  color: $theme-gray-light;
+  font-size: 12px;
+}

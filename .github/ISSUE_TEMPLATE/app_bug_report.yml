@@ -1,0 +1,95 @@
+name: App - Bug report
+description: Report a bug in the Ferdium app
+labels: ["bug :beetle:"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        1. Please fill our form below, this way we can analyse and fix the problem as fast as possible.
+        2. If you are adding screenshots and/or videos, please do add it in English so that a wider group of people can understand and help with resolution.
+  - type: checkboxes
+    attributes:
+      label: Avoid duplicates
+      description: Please ensure you've completed the following
+      options:
+        - label: I agree to follow the [Code of Conduct](https://github.com/ferdium/ferdium-app/blob/HEAD/CODE_OF_CONDUCT.md) that this project adheres to.
+          required: true
+        - label: I have searched the [issues tracker](https://github.com/ferdium/ferdium-app/issues?q=is%3Aopen+is%3Aissue+label%3A%22bug+%3Abeetle%3A%22) for a bug report similar to mine, in vain
+          required: true
+  - type: input
+    attributes:
+      label: Ferdium Version
+      description: What version of Ferdium are you using?
+      placeholder: 6.0.0-nightly.7
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: What Operating System are you using?
+      options:
+        - Windows
+        - macOS
+        - Ubuntu
+        - Other Linux
+        - Other (specify below)
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Operating System Version
+      description: What Operating System version are you using? On Windows, click Start button > Settings > System > About. On macOS, click the Apple Menu > About This Mac. On Linux, use lsb_release or uname -a.
+      placeholder: "e.g. Windows 10 version 1909, macOS Catalina 10.15.7, or Ubuntu 20.04"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: What arch are you using?
+      options:
+        - x64
+        - ia32
+        - arm64 (including Apple Silicon)
+        - Other (specify in Additional information section)
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Last Known Working Ferdium version
+      description: What is the last version of Ferdium this worked in, if applicable?
+      placeholder: 6.0.0-nightly.7
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual Behavior
+      description: A clear description of what actually happens.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Explain to us how we can reproduce your bug on our computer
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Debug link
+      description: Please get your debug link via Ferdium's "Help" > "Publish Debug Information", then share your link with us
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help visualize your problem
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: If your problem needs further explanation, please add more information here
