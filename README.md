@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/images/logo.png" alt="OneChat Logo" width="80" />
+  <img src="./src/assets/images/onechat-logo.png" alt="OneChat Logo" width="1200" />
 </p>
 
 <h1 align="center">OneChat · 一聊</h1>
@@ -32,7 +32,6 @@
 </p>
 <p align="center">
   <img src="./src/assets/images/1.webp" alt="OneChat Screenshot 1" width="800" /><br/><br/>
-  <img src="./src/assets/images/3.png" alt="OneChat App Screenshot" width="800" />
 </p>
 ---
 
@@ -52,7 +51,9 @@
 ---
 
 ## 功能一览
-
+<p align="center">
+  <img src="./src/assets/images/3.png" alt="OneChat App Screenshot" width="800" /><br/><br/>
+</p>
 ### 📬 360+ 服务聚合
 
 通过 Recipe 系统将各类在线服务嵌入独立容器，每个服务拥有独立的数据隔离，互不干扰。
