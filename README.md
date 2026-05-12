@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <strong>⚠️ 注：此项目在开源项目 <a href="https://github.com/ferdium/ferdium-app">ferdium-app</a> 的基础上进行了全面重构。</strong>
+  <strong>⚠️ 注：此项目在开源项目 <a href="https://github.com/ferdium/ferdium-app">ferdium-app</a> 的基础上,进行了全面重构,UI框架改成了MUI v9,完全重构了整体框架与优化了性能,植入了全新的AI架构以及非常多的功能,社区版完全开源。</strong>
 </p>
   <h1 align="center">OneChat · 一聊</h1>
 <p align="center">
