@@ -2,9 +2,8 @@
   <img src="./src/assets/images/onechat-logo.png" alt="OneChat Logo" width="600" />
 </p>
 
-<h1 align="center">OneChat · 一聊</h1>
-
 <p align="center">
+  <h1 align="center">OneChat · 一聊</h1>
   <strong>一站式多平台消息聚合桌面客户端</strong><br/>
   在一个窗口中管理 WhatsApp、Telegram、Slack、Discord 等 360+ 消息服务
 </p>
